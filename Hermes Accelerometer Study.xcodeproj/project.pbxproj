@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27DD5E3F217514C800F56FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E3E217514C800F56FFE /* AppDelegate.swift */; };
+		27DD5E41217514C800F56FFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E40217514C800F56FFE /* ViewController.swift */; };
+		27DD5E44217514C800F56FFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DD5E42217514C800F56FFE /* Main.storyboard */; };
+		27DD5E47217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E45217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld */; };
+		27DD5E49217514CD00F56FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27DD5E48217514CD00F56FFE /* Assets.xcassets */; };
+		27DD5E4C217514CD00F56FFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DD5E4A217514CD00F56FFE /* LaunchScreen.storyboard */; };
+		27DD5E57217514CD00F56FFE /* Hermes_Accelerometer_StudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E56217514CD00F56FFE /* Hermes_Accelerometer_StudyTests.swift */; };
+		27DD5E62217514CD00F56FFE /* Hermes_Accelerometer_StudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E61217514CD00F56FFE /* Hermes_Accelerometer_StudyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27DD5E53217514CD00F56FFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27DD5E33217514C800F56FFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27DD5E3A217514C800F56FFE;
+			remoteInfo = "Hermes Accelerometer Study";
+		};
+		27DD5E5E217514CD00F56FFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27DD5E33217514C800F56FFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27DD5E3A217514C800F56FFE;
+			remoteInfo = "Hermes Accelerometer Study";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27DD5E3B217514C800F56FFE /* Hermes Accelerometer Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hermes Accelerometer Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27DD5E3E217514C800F56FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27DD5E40217514C800F56FFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		27DD5E43217514C800F56FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27DD5E46217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hermes_Accelerometer_Study.xcdatamodel; sourceTree = "<group>"; };
+		27DD5E48217514CD00F56FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27DD5E4B217514CD00F56FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27DD5E4D217514CD00F56FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27DD5E52217514CD00F56FFE /* Hermes Accelerometer StudyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hermes Accelerometer StudyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27DD5E56217514CD00F56FFE /* Hermes_Accelerometer_StudyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hermes_Accelerometer_StudyTests.swift; sourceTree = "<group>"; };
+		27DD5E58217514CD00F56FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27DD5E5D217514CD00F56FFE /* Hermes Accelerometer StudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hermes Accelerometer StudyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27DD5E61217514CD00F56FFE /* Hermes_Accelerometer_StudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hermes_Accelerometer_StudyUITests.swift; sourceTree = "<group>"; };
+		27DD5E63217514CD00F56FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27DD5E38217514C800F56FFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DD5E4F217514CD00F56FFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DD5E5A217514CD00F56FFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27DD5E32217514C800F56FFE = {
+			isa = PBXGroup;
+			children = (
+				27DD5E3D217514C800F56FFE /* Hermes Accelerometer Study */,
+				27DD5E55217514CD00F56FFE /* Hermes Accelerometer StudyTests */,
+				27DD5E60217514CD00F56FFE /* Hermes Accelerometer StudyUITests */,
+				27DD5E3C217514C800F56FFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27DD5E3C217514C800F56FFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27DD5E3B217514C800F56FFE /* Hermes Accelerometer Study.app */,
+				27DD5E52217514CD00F56FFE /* Hermes Accelerometer StudyTests.xctest */,
+				27DD5E5D217514CD00F56FFE /* Hermes Accelerometer StudyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27DD5E3D217514C800F56FFE /* Hermes Accelerometer Study */ = {
+			isa = PBXGroup;
+			children = (
+				27DD5E3E217514C800F56FFE /* AppDelegate.swift */,
+				27DD5E40217514C800F56FFE /* ViewController.swift */,
+				27DD5E42217514C800F56FFE /* Main.storyboard */,
+				27DD5E48217514CD00F56FFE /* Assets.xcassets */,
+				27DD5E4A217514CD00F56FFE /* LaunchScreen.storyboard */,
+				27DD5E4D217514CD00F56FFE /* Info.plist */,
+				27DD5E45217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld */,
+			);
+			path = "Hermes Accelerometer Study";
+			sourceTree = "<group>";
+		};
+		27DD5E55217514CD00F56FFE /* Hermes Accelerometer StudyTests */ = {
+			isa = PBXGroup;
+			children = (
+				27DD5E56217514CD00F56FFE /* Hermes_Accelerometer_StudyTests.swift */,
+				27DD5E58217514CD00F56FFE /* Info.plist */,
+			);
+			path = "Hermes Accelerometer StudyTests";
+			sourceTree = "<group>";
+		};
+		27DD5E60217514CD00F56FFE /* Hermes Accelerometer StudyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				27DD5E61217514CD00F56FFE /* Hermes_Accelerometer_StudyUITests.swift */,
+				27DD5E63217514CD00F56FFE /* Info.plist */,
+			);
+			path = "Hermes Accelerometer StudyUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27DD5E3A217514C800F56FFE /* Hermes Accelerometer Study */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27DD5E66217514CD00F56FFE /* Build configuration list for PBXNativeTarget "Hermes Accelerometer Study" */;
+			buildPhases = (
+				27DD5E37217514C800F56FFE /* Sources */,
+				27DD5E38217514C800F56FFE /* Frameworks */,
+				27DD5E39217514C800F56FFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hermes Accelerometer Study";
+			productName = "Hermes Accelerometer Study";
+			productReference = 27DD5E3B217514C800F56FFE /* Hermes Accelerometer Study.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27DD5E51217514CD00F56FFE /* Hermes Accelerometer StudyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27DD5E69217514CD00F56FFE /* Build configuration list for PBXNativeTarget "Hermes Accelerometer StudyTests" */;
+			buildPhases = (
+				27DD5E4E217514CD00F56FFE /* Sources */,
+				27DD5E4F217514CD00F56FFE /* Frameworks */,
+				27DD5E50217514CD00F56FFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27DD5E54217514CD00F56FFE /* PBXTargetDependency */,
+			);
+			name = "Hermes Accelerometer StudyTests";
+			productName = "Hermes Accelerometer StudyTests";
+			productReference = 27DD5E52217514CD00F56FFE /* Hermes Accelerometer StudyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27DD5E5C217514CD00F56FFE /* Hermes Accelerometer StudyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27DD5E6C217514CD00F56FFE /* Build configuration list for PBXNativeTarget "Hermes Accelerometer StudyUITests" */;
+			buildPhases = (
+				27DD5E59217514CD00F56FFE /* Sources */,
+				27DD5E5A217514CD00F56FFE /* Frameworks */,
+				27DD5E5B217514CD00F56FFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27DD5E5F217514CD00F56FFE /* PBXTargetDependency */,
+			);
+			name = "Hermes Accelerometer StudyUITests";
+			productName = "Hermes Accelerometer StudyUITests";
+			productReference = 27DD5E5D217514CD00F56FFE /* Hermes Accelerometer StudyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27DD5E33217514C800F56FFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Paul Jones";
+				TargetAttributes = {
+					27DD5E3A217514C800F56FFE = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					27DD5E51217514CD00F56FFE = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 27DD5E3A217514C800F56FFE;
+					};
+					27DD5E5C217514CD00F56FFE = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 27DD5E3A217514C800F56FFE;
+					};
+				};
+			};
+			buildConfigurationList = 27DD5E36217514C800F56FFE /* Build configuration list for PBXProject "Hermes Accelerometer Study" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27DD5E32217514C800F56FFE;
+			productRefGroup = 27DD5E3C217514C800F56FFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27DD5E3A217514C800F56FFE /* Hermes Accelerometer Study */,
+				27DD5E51217514CD00F56FFE /* Hermes Accelerometer StudyTests */,
+				27DD5E5C217514CD00F56FFE /* Hermes Accelerometer StudyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27DD5E39217514C800F56FFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DD5E4C217514CD00F56FFE /* LaunchScreen.storyboard in Resources */,
+				27DD5E49217514CD00F56FFE /* Assets.xcassets in Resources */,
+				27DD5E44217514C800F56FFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DD5E50217514CD00F56FFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DD5E5B217514CD00F56FFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27DD5E37217514C800F56FFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DD5E41217514C800F56FFE /* ViewController.swift in Sources */,
+				27DD5E47217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld in Sources */,
+				27DD5E3F217514C800F56FFE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DD5E4E217514CD00F56FFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DD5E57217514CD00F56FFE /* Hermes_Accelerometer_StudyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27DD5E59217514CD00F56FFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DD5E62217514CD00F56FFE /* Hermes_Accelerometer_StudyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27DD5E54217514CD00F56FFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27DD5E3A217514C800F56FFE /* Hermes Accelerometer Study */;
+			targetProxy = 27DD5E53217514CD00F56FFE /* PBXContainerItemProxy */;
+		};
+		27DD5E5F217514CD00F56FFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27DD5E3A217514C800F56FFE /* Hermes Accelerometer Study */;
+			targetProxy = 27DD5E5E217514CD00F56FFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27DD5E42217514C800F56FFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27DD5E43217514C800F56FFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27DD5E4A217514CD00F56FFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27DD5E4B217514CD00F56FFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27DD5E64217514CD00F56FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27DD5E65217514CD00F56FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27DD5E67217514CD00F56FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZZ7W4SB26;
+				INFOPLIST_FILE = "Hermes Accelerometer Study/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "prolificinteractive.Hermes-Accelerometer-Study";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27DD5E68217514CD00F56FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZZ7W4SB26;
+				INFOPLIST_FILE = "Hermes Accelerometer Study/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "prolificinteractive.Hermes-Accelerometer-Study";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		27DD5E6A217514CD00F56FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZZ7W4SB26;
+				INFOPLIST_FILE = "Hermes Accelerometer StudyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "prolificinteractive.Hermes-Accelerometer-StudyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hermes Accelerometer Study.app/Hermes Accelerometer Study";
+			};
+			name = Debug;
+		};
+		27DD5E6B217514CD00F56FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZZ7W4SB26;
+				INFOPLIST_FILE = "Hermes Accelerometer StudyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "prolificinteractive.Hermes-Accelerometer-StudyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hermes Accelerometer Study.app/Hermes Accelerometer Study";
+			};
+			name = Release;
+		};
+		27DD5E6D217514CD00F56FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZZ7W4SB26;
+				INFOPLIST_FILE = "Hermes Accelerometer StudyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "prolificinteractive.Hermes-Accelerometer-StudyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hermes Accelerometer Study";
+			};
+			name = Debug;
+		};
+		27DD5E6E217514CD00F56FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZZ7W4SB26;
+				INFOPLIST_FILE = "Hermes Accelerometer StudyUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "prolificinteractive.Hermes-Accelerometer-StudyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hermes Accelerometer Study";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27DD5E36217514C800F56FFE /* Build configuration list for PBXProject "Hermes Accelerometer Study" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DD5E64217514CD00F56FFE /* Debug */,
+				27DD5E65217514CD00F56FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27DD5E66217514CD00F56FFE /* Build configuration list for PBXNativeTarget "Hermes Accelerometer Study" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DD5E67217514CD00F56FFE /* Debug */,
+				27DD5E68217514CD00F56FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27DD5E69217514CD00F56FFE /* Build configuration list for PBXNativeTarget "Hermes Accelerometer StudyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DD5E6A217514CD00F56FFE /* Debug */,
+				27DD5E6B217514CD00F56FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27DD5E6C217514CD00F56FFE /* Build configuration list for PBXNativeTarget "Hermes Accelerometer StudyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DD5E6D217514CD00F56FFE /* Debug */,
+				27DD5E6E217514CD00F56FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		27DD5E45217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				27DD5E46217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodel */,
+			);
+			currentVersion = 27DD5E46217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodel */;
+			path = Hermes_Accelerometer_Study.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 27DD5E33217514C800F56FFE /* Project object */;
+}
