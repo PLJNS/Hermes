@@ -1,0 +1,6 @@
+framework module Pods_Hermes_Accelerometer_StudyUITests {
+  umbrella header "Pods-Hermes Accelerometer StudyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

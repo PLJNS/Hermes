@@ -1,0 +1,6 @@
+framework module Pods_Hermes_Accelerometer_Study {
+  umbrella header "Pods-Hermes Accelerometer Study-umbrella.h"
+
+  export *
+  module * { export * }
+}
