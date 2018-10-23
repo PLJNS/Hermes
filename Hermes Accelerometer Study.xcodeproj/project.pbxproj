@@ -8,9 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		274B804D2178EE2600BD1A57 /* PrimarySplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B804C2178EE2600BD1A57 /* PrimarySplitViewController.swift */; };
-		274B804F2179028900BD1A57 /* TrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B804E2179028900BD1A57 /* TrackerViewController.swift */; };
+		274B80512179087C00BD1A57 /* NSManagedObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B80502179087C00BD1A57 /* NSManagedObjectExtensions.swift */; };
+		274B8053217908B000BD1A57 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B8052217908B000BD1A57 /* DateExtensions.swift */; };
+		274B8055217908F100BD1A57 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B8054217908F100BD1A57 /* IntExtensions.swift */; };
+		274B80572179090500BD1A57 /* CMMotionActivityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B80562179090500BD1A57 /* CMMotionActivityExtensions.swift */; };
+		274B805A217909E800BD1A57 /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B8059217909E800BD1A57 /* SessionsViewController.swift */; };
+		274B805C217909F400BD1A57 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B805B217909F400BD1A57 /* SessionViewController.swift */; };
+		274B805E21790C1000BD1A57 /* AddSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B805D21790C1000BD1A57 /* AddSessionViewController.swift */; };
+		274B80622179165200BD1A57 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B80612179165200BD1A57 /* StringExtensions.swift */; };
 		27DD5E3F217514C800F56FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E3E217514C800F56FFE /* AppDelegate.swift */; };
-		27DD5E41217514C800F56FFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E40217514C800F56FFE /* ViewController.swift */; };
 		27DD5E44217514C800F56FFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DD5E42217514C800F56FFE /* Main.storyboard */; };
 		27DD5E47217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E45217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld */; };
 		27DD5E49217514CD00F56FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27DD5E48217514CD00F56FFE /* Assets.xcassets */; };
@@ -19,9 +25,8 @@
 		27DD5E62217514CD00F56FFE /* Hermes_Accelerometer_StudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E61217514CD00F56FFE /* Hermes_Accelerometer_StudyUITests.swift */; };
 		27DD5E7021764D5700F56FFE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E6F21764D5700F56FFE /* UIViewControllerExtensions.swift */; };
 		27DD5E7221764D6F00F56FFE /* UIAlertControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E7121764D6F00F56FFE /* UIAlertControllerExtensions.swift */; };
-		27DD5E742176521100F56FFE /* AccelerometerDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E732176521100F56FFE /* AccelerometerDataExtensions.swift */; };
+		27DD5E742176521100F56FFE /* CoreDataModelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E732176521100F56FFE /* CoreDataModelExtensions.swift */; };
 		27DD5E762176561A00F56FFE /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E752176561A00F56FFE /* UserDefaultsExtensions.swift */; };
-		27DD5E7B2177D15600F56FFE /* MotionActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E7A2177D15600F56FFE /* MotionActivityViewController.swift */; };
 		909222AF70A95908B76092D3 /* Pods_Hermes_Accelerometer_StudyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3ED1433F36D640B065B698E /* Pods_Hermes_Accelerometer_StudyUITests.framework */; };
 		CD4C6D976E903DA7A1666E44 /* Pods_Hermes_Accelerometer_StudyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21DEE4259312FE45C663FE1 /* Pods_Hermes_Accelerometer_StudyTests.framework */; };
 		D2B89205AB7A327FC5F3899B /* Pods_Hermes_Accelerometer_Study.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD4175C3213616B690BC8CA7 /* Pods_Hermes_Accelerometer_Study.framework */; };
@@ -46,10 +51,16 @@
 
 /* Begin PBXFileReference section */
 		274B804C2178EE2600BD1A57 /* PrimarySplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimarySplitViewController.swift; sourceTree = "<group>"; };
-		274B804E2179028900BD1A57 /* TrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerViewController.swift; sourceTree = "<group>"; };
+		274B80502179087C00BD1A57 /* NSManagedObjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectExtensions.swift; sourceTree = "<group>"; };
+		274B8052217908B000BD1A57 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		274B8054217908F100BD1A57 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		274B80562179090500BD1A57 /* CMMotionActivityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMMotionActivityExtensions.swift; sourceTree = "<group>"; };
+		274B8059217909E800BD1A57 /* SessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
+		274B805B217909F400BD1A57 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		274B805D21790C1000BD1A57 /* AddSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSessionViewController.swift; sourceTree = "<group>"; };
+		274B80612179165200BD1A57 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		27DD5E3B217514C800F56FFE /* Hermes Accelerometer Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hermes Accelerometer Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DD5E3E217514C800F56FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		27DD5E40217514C800F56FFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		27DD5E43217514C800F56FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27DD5E46217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hermes_Accelerometer_Study.xcdatamodel; sourceTree = "<group>"; };
 		27DD5E48217514CD00F56FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,9 +74,8 @@
 		27DD5E63217514CD00F56FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27DD5E6F21764D5700F56FFE /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		27DD5E7121764D6F00F56FFE /* UIAlertControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtensions.swift; sourceTree = "<group>"; };
-		27DD5E732176521100F56FFE /* AccelerometerDataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerDataExtensions.swift; sourceTree = "<group>"; };
+		27DD5E732176521100F56FFE /* CoreDataModelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataModelExtensions.swift; sourceTree = "<group>"; };
 		27DD5E752176561A00F56FFE /* UserDefaultsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensions.swift; sourceTree = "<group>"; };
-		27DD5E7A2177D15600F56FFE /* MotionActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionActivityViewController.swift; sourceTree = "<group>"; };
 		39127277FD0A0E828D50D5E8 /* Pods-Hermes Accelerometer StudyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hermes Accelerometer StudyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hermes Accelerometer StudyTests/Pods-Hermes Accelerometer StudyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		44C6722EAF1A68122BFD5BC2 /* Pods-Hermes Accelerometer StudyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hermes Accelerometer StudyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hermes Accelerometer StudyUITests/Pods-Hermes Accelerometer StudyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DF51DC98A8B37D5C080F901 /* Pods-Hermes Accelerometer StudyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hermes Accelerometer StudyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hermes Accelerometer StudyTests/Pods-Hermes Accelerometer StudyTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +128,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		274B80582179094000BD1A57 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				274B80562179090500BD1A57 /* CMMotionActivityExtensions.swift */,
+				27DD5E732176521100F56FFE /* CoreDataModelExtensions.swift */,
+				274B8052217908B000BD1A57 /* DateExtensions.swift */,
+				274B8054217908F100BD1A57 /* IntExtensions.swift */,
+				274B80502179087C00BD1A57 /* NSManagedObjectExtensions.swift */,
+				274B804C2178EE2600BD1A57 /* PrimarySplitViewController.swift */,
+				274B80612179165200BD1A57 /* StringExtensions.swift */,
+				27DD5E7121764D6F00F56FFE /* UIAlertControllerExtensions.swift */,
+				27DD5E6F21764D5700F56FFE /* UIViewControllerExtensions.swift */,
+				27DD5E752176561A00F56FFE /* UserDefaultsExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		27DD5E32217514C800F56FFE = {
 			isa = PBXGroup;
 			children = (
@@ -144,19 +171,15 @@
 			isa = PBXGroup;
 			children = (
 				27DD5E3E217514C800F56FFE /* AppDelegate.swift */,
-				27DD5E40217514C800F56FFE /* ViewController.swift */,
 				27DD5E42217514C800F56FFE /* Main.storyboard */,
+				274B8059217909E800BD1A57 /* SessionsViewController.swift */,
+				274B805B217909F400BD1A57 /* SessionViewController.swift */,
+				274B805D21790C1000BD1A57 /* AddSessionViewController.swift */,
 				27DD5E48217514CD00F56FFE /* Assets.xcassets */,
 				27DD5E4A217514CD00F56FFE /* LaunchScreen.storyboard */,
 				27DD5E4D217514CD00F56FFE /* Info.plist */,
 				27DD5E45217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld */,
-				27DD5E6F21764D5700F56FFE /* UIViewControllerExtensions.swift */,
-				27DD5E7121764D6F00F56FFE /* UIAlertControllerExtensions.swift */,
-				27DD5E732176521100F56FFE /* AccelerometerDataExtensions.swift */,
-				27DD5E752176561A00F56FFE /* UserDefaultsExtensions.swift */,
-				27DD5E7A2177D15600F56FFE /* MotionActivityViewController.swift */,
-				274B804C2178EE2600BD1A57 /* PrimarySplitViewController.swift */,
-				274B804E2179028900BD1A57 /* TrackerViewController.swift */,
+				274B80582179094000BD1A57 /* Extensions */,
 			);
 			path = "Hermes Accelerometer Study";
 			sourceTree = "<group>";
@@ -399,16 +422,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274B80512179087C00BD1A57 /* NSManagedObjectExtensions.swift in Sources */,
+				274B805A217909E800BD1A57 /* SessionsViewController.swift in Sources */,
+				274B80622179165200BD1A57 /* StringExtensions.swift in Sources */,
+				274B8053217908B000BD1A57 /* DateExtensions.swift in Sources */,
+				274B805E21790C1000BD1A57 /* AddSessionViewController.swift in Sources */,
 				27DD5E7021764D5700F56FFE /* UIViewControllerExtensions.swift in Sources */,
-				27DD5E41217514C800F56FFE /* ViewController.swift in Sources */,
 				27DD5E7221764D6F00F56FFE /* UIAlertControllerExtensions.swift in Sources */,
+				274B8055217908F100BD1A57 /* IntExtensions.swift in Sources */,
 				274B804D2178EE2600BD1A57 /* PrimarySplitViewController.swift in Sources */,
-				27DD5E7B2177D15600F56FFE /* MotionActivityViewController.swift in Sources */,
-				274B804F2179028900BD1A57 /* TrackerViewController.swift in Sources */,
 				27DD5E47217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld in Sources */,
+				274B805C217909F400BD1A57 /* SessionViewController.swift in Sources */,
+				274B80572179090500BD1A57 /* CMMotionActivityExtensions.swift in Sources */,
 				27DD5E762176561A00F56FFE /* UserDefaultsExtensions.swift in Sources */,
 				27DD5E3F217514C800F56FFE /* AppDelegate.swift in Sources */,
-				27DD5E742176521100F56FFE /* AccelerometerDataExtensions.swift in Sources */,
+				27DD5E742176521100F56FFE /* CoreDataModelExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

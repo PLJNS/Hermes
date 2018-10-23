@@ -15,15 +15,23 @@ extension UIViewController {
         return UIApplication.shared.delegate as! AppDelegate
     }
     
+    var persistentContainer: NSPersistentContainer {
+        return appDelegate.persistentContainer
+    }
+    
     var viewManagedObjectContext: NSManagedObjectContext {
-        return appDelegate.persistentContainer.viewContext
+        return persistentContainer.viewContext
     }
     
     func newBackgroundContext() -> NSManagedObjectContext {
-        return appDelegate.persistentContainer.newBackgroundContext()
+        return persistentContainer.newBackgroundContext()
     }
     
-    func save(_ managedObjectContext: NSManagedObjectContext) {
+    func present(error: Error) {
+        present(UIAlertController(title: "Error", error: error), animated: true)
+    }
+    
+    func save(managedObjectContext: NSManagedObjectContext) {
         do {
             let processId = showLoading()
             try managedObjectContext.save()
