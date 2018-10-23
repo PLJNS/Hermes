@@ -9,8 +9,10 @@
 import CoreData
 
 extension NSManagedObject {
+    
     @discardableResult class func insertNewObject(into context: NSManagedObjectContext) -> Self {
         let object = NSEntityDescription.insertNewObject(forEntityName: String(describing: self), into: context)
         return unsafeDowncast(object, to: self)
     }
+    
 }

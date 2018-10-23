@@ -7,38 +7,11 @@
 //
 
 import UIKit
-import CoreData
 
 extension UIViewController {
     
-    var appDelegate: AppDelegate {
-        return UIApplication.shared.delegate as! AppDelegate
-    }
-    
-    var persistentContainer: NSPersistentContainer {
-        return appDelegate.persistentContainer
-    }
-    
-    var viewManagedObjectContext: NSManagedObjectContext {
-        return persistentContainer.viewContext
-    }
-    
-    func newBackgroundContext() -> NSManagedObjectContext {
-        return persistentContainer.newBackgroundContext()
-    }
-    
     func present(error: Error) {
         present(UIAlertController(title: "Error", error: error), animated: true)
-    }
-    
-    func save(managedObjectContext: NSManagedObjectContext) {
-        do {
-            let processId = showLoading()
-            try managedObjectContext.save()
-            hideLoading(procesId: processId)
-        } catch {
-            present(UIAlertController(error: error), animated: true)
-        }
     }
     
     public func showLoading(style: UIActivityIndicatorView.Style = .gray) -> Int {

@@ -6,9 +6,8 @@
 //  Copyright © 2018 Paul Jones. All rights reserved.
 //
 
-import Foundation
-
 public extension String {
+    
     public var nilIfEmpty: String? {
         return isEmpty ? nil : self
     }
@@ -19,4 +18,5 @@ public extension String {
     mutating func capitalizeFirstLetter() {
         self = self.capitalizingFirstLetter()
     }
+    
 }

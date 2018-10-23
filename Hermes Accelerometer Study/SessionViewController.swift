@@ -14,7 +14,7 @@ import CSV
 
 class SessionViewController: UIViewController {
     
-    @IBOutlet var pauseBarButtonItem: UIBarButtonItem!
+    @IBOutlet private var pauseBarButtonItem: UIBarButtonItem!
     @IBOutlet var trashBarButtonItem: UIBarButtonItem!
     @IBOutlet var playBarButtonItem: UIBarButtonItem!
     @IBOutlet var shareBarButtonItem: UIBarButtonItem!

@@ -8,35 +8,6 @@
 
 import Foundation
 
-/// Your object can be converted into a user defaults key. See UserDefaultsExtensions.
-protocol UserDefaultsKeyConvertible {
-    
-    /// The key.
-    var userDefaultsKey: String { get }
-    
-}
-
-enum UserDefaultsKeys: String, UserDefaultsKeyConvertible {
-    case updateInterval = "updateInterval"
-    
-    var userDefaultsKey: String {
-        return rawValue
-    }
-    
-}
-
-extension UserDefaults {
-    
-    var updateInterval: Float {
-        get {
-            return float(forKey: UserDefaultsKeys.updateInterval)
-        } set {
-            set(newValue, forKey: UserDefaultsKeys.updateInterval)
-        }
-    }
-
-}
-
 // MARK: - Pass a user defaults convertible instead of a string to get a user default.
 extension UserDefaults {
     
