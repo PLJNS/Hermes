@@ -30,6 +30,7 @@
 		2761E8C8217F96CA004B16F6 /* DateFormatConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8C7217F96CA004B16F6 /* DateFormatConvertible.swift */; };
 		2761E8CB217F9721004B16F6 /* DateConvertibleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8CA217F9721004B16F6 /* DateConvertibleExtensions.swift */; };
 		2761E8CD217F9739004B16F6 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8CC217F9739004B16F6 /* DateFormat.swift */; };
+		2761E8CF217FBFCB004B16F6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8CE217FBFCB004B16F6 /* SessionManager.swift */; };
 		27DD5E3F217514C800F56FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E3E217514C800F56FFE /* AppDelegate.swift */; };
 		27DD5E44217514C800F56FFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DD5E42217514C800F56FFE /* Main.storyboard */; };
 		27DD5E47217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E45217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld */; };
@@ -86,6 +87,7 @@
 		2761E8C7217F96CA004B16F6 /* DateFormatConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatConvertible.swift; sourceTree = "<group>"; };
 		2761E8CA217F9721004B16F6 /* DateConvertibleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConvertibleExtensions.swift; sourceTree = "<group>"; };
 		2761E8CC217F9739004B16F6 /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
+		2761E8CE217FBFCB004B16F6 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		27DD5E3B217514C800F56FFE /* Hermes Accelerometer Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hermes Accelerometer Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DD5E3E217514C800F56FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27DD5E43217514C800F56FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,14 +166,14 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
-		2761E8B1217F9320004B16F6 /* Core Data Model */ = {
+		2761E8B1217F9320004B16F6 /* Core Data Model Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				2761E8A9217F928D004B16F6 /* HMSLocationExtensions.swift */,
 				2761E8AB217F92A9004B16F6 /* HMSAccelerometerDataExtensions.swift */,
 				2761E8AD217F92F7004B16F6 /* HMSMotionActivityExtensions.swift */,
 			);
-			path = "Core Data Model";
+			path = "Core Data Model Extensions";
 			sourceTree = "<group>";
 		};
 		2761E8B4217F939D004B16F6 /* Swift */ = {
@@ -187,11 +189,11 @@
 		2761E8B5217F93B8004B16F6 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				2761E8C0217F95AE004B16F6 /* User Defaults */,
 				2761E8C9217F96FB004B16F6 /* Date */,
 				274B8052217908B000BD1A57 /* DateExtensions.swift */,
-				2761E8B2217F936D004B16F6 /* UInt32Extensions.swift */,
 				2761E8C5217F9613004B16F6 /* FormatterExtensions.swift */,
+				2761E8B2217F936D004B16F6 /* UInt32Extensions.swift */,
+				2761E8C0217F95AE004B16F6 /* UserDefaults */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -217,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				2761E8BA217F94D5004B16F6 /* Core Data */,
-				2761E8B1217F9320004B16F6 /* Core Data Model */,
 				2761E8BB217F94E6004B16F6 /* Core Motion */,
 				2761E8B5217F93B8004B16F6 /* Foundation */,
 				2761E8B4217F939D004B16F6 /* Swift */,
@@ -236,13 +237,13 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
-		2761E8C0217F95AE004B16F6 /* User Defaults */ = {
+		2761E8C0217F95AE004B16F6 /* UserDefaults */ = {
 			isa = PBXGroup;
 			children = (
 				27DD5E752176561A00F56FFE /* UserDefaultsExtensions.swift */,
 				2761E8C1217F95C8004B16F6 /* UserDefaultsKeyConvertible.swift */,
 			);
-			path = "User Defaults";
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 		2761E8C9217F96FB004B16F6 /* Date */ = {
@@ -285,11 +286,13 @@
 				274B8059217909E800BD1A57 /* SessionsViewController.swift */,
 				274B805B217909F400BD1A57 /* SessionViewController.swift */,
 				274B805D21790C1000BD1A57 /* AddSessionViewController.swift */,
+				2761E8CE217FBFCB004B16F6 /* SessionManager.swift */,
 				27DD5E48217514CD00F56FFE /* Assets.xcassets */,
 				27DD5E4A217514CD00F56FFE /* LaunchScreen.storyboard */,
 				27DD5E4D217514CD00F56FFE /* Info.plist */,
 				27DD5E45217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld */,
 				2761E8BD217F9534004B16F6 /* Shared */,
+				2761E8B1217F9320004B16F6 /* Core Data Model Extensions */,
 				2761E8BC217F94FD004B16F6 /* Extensions */,
 			);
 			path = "Hermes Accelerometer Study";
@@ -395,6 +398,11 @@
 				TargetAttributes = {
 					27DD5E3A217514C800F56FFE = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					27DD5E51217514CD00F56FFE = {
 						CreatedOnToolsVersion = 10.0;
@@ -538,6 +546,7 @@
 				274B805A217909E800BD1A57 /* SessionsViewController.swift in Sources */,
 				274B80622179165200BD1A57 /* StringExtensions.swift in Sources */,
 				274B8053217908B000BD1A57 /* DateExtensions.swift in Sources */,
+				2761E8CF217FBFCB004B16F6 /* SessionManager.swift in Sources */,
 				2761E8C2217F95C8004B16F6 /* UserDefaultsKeyConvertible.swift in Sources */,
 				2761E8CD217F9739004B16F6 /* DateFormat.swift in Sources */,
 				2761E8B0217F9318004B16F6 /* DoubleExtensions.swift in Sources */,

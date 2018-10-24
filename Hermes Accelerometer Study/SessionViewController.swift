@@ -14,21 +14,17 @@ import CSV
 
 class SessionViewController: UIViewController {
     
-    @IBOutlet private var pauseBarButtonItem: UIBarButtonItem!
-    @IBOutlet var trashBarButtonItem: UIBarButtonItem!
-    @IBOutlet var playBarButtonItem: UIBarButtonItem!
-    @IBOutlet var shareBarButtonItem: UIBarButtonItem!
-    @IBOutlet weak var tableView: UITableView!
-    
     var session: HMSSession?
-    let motionManager = CMMotionManager()
-    let motionActivityManager = CMMotionActivityManager()
-    let locationManager = CLLocationManager()
-    lazy var backgroundContext: NSManagedObjectContext = newBackgroundContext()
-    var isRecording: Bool = false
-    var accelerometerUpdateInterval: Double = 1/60
     
-    lazy var fetchedResultsController: NSFetchedResultsController<HMSEntry> = {
+    @IBOutlet private var pauseBarButtonItem: UIBarButtonItem!
+    @IBOutlet private var trashBarButtonItem: UIBarButtonItem!
+    @IBOutlet private var playBarButtonItem: UIBarButtonItem!
+    @IBOutlet private var shareBarButtonItem: UIBarButtonItem!
+    @IBOutlet private weak var tableView: UITableView!
+    
+    private var sessionManager = SessionManager()
+    private lazy var backgroundContext: NSManagedObjectContext = newBackgroundContext()
+    private lazy var fetchedResultsController: NSFetchedResultsController<HMSEntry> = {
         let fetchRequest: NSFetchRequest<HMSEntry> = HMSEntry.fetchRequest()
         if let sessionName = session?.name {
             fetchRequest.predicate = NSPredicate(format: "session.name == %@", sessionName)
@@ -44,6 +40,7 @@ class SessionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        sessionManager.delegate = self
         title = session?.name
         navigationItem.setRightBarButtonItems([playBarButtonItem, trashBarButtonItem, shareBarButtonItem], animated: false)
         do {
@@ -59,10 +56,7 @@ class SessionViewController: UIViewController {
             navigationItem.setRightBarButtonItems([playBarButtonItem, trashBarButtonItem, shareBarButtonItem], animated: true)
             navigationItem.hidesBackButton = false
             trashBarButtonItem.isEnabled = true
-            isRecording = false
-            motionManager.stopAccelerometerUpdates()
-            locationManager.stopUpdatingLocation()
-            motionActivityManager.stopActivityUpdates()
+            sessionManager.stopUpdates()
             save(managedObjectContext: viewManagedObjectContext)
         case trashBarButtonItem:
             if let session = session {
@@ -172,26 +166,7 @@ class SessionViewController: UIViewController {
             navigationItem.setRightBarButtonItems([pauseBarButtonItem, trashBarButtonItem, shareBarButtonItem], animated: true)
             navigationItem.hidesBackButton = true
             trashBarButtonItem.isEnabled = false
-            isRecording = true
-            
-            if motionManager.isAccelerometerAvailable {
-                motionManager.accelerometerUpdateInterval = accelerometerUpdateInterval
-                motionManager.startAccelerometerUpdates()
-            }
-            
-            motionActivityManager.startActivityUpdates(to: .main) { [weak self] (activity) in
-                guard let strongSelf = self else { return }
-                if let activity = activity {
-                    let hmsMotionActivity = HMSMotionActivity.insertNewObject(into: strongSelf.viewManagedObjectContext)
-                    hmsMotionActivity.configure(with: activity)
-                    strongSelf.session?.addToEntries(hmsMotionActivity)
-                }
-            }
-            
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
-            locationManager.requestAlwaysAuthorization()
-            locationManager.startUpdatingLocation()
+            sessionManager.startUpdates()
         default:
             ()
         }
@@ -199,7 +174,31 @@ class SessionViewController: UIViewController {
     
 }
 
+extension SessionViewController: SessionManagerDelegate {
+    
+    func didUpdateActivity(_ activity: CMMotionActivity) {
+        let hmsMotionActivity = HMSMotionActivity.insertNewObject(into: viewManagedObjectContext)
+        hmsMotionActivity.configure(with: activity)
+        session?.addToEntries(hmsMotionActivity)
+    }
+    
+    func didUpdateLocation(_ location: CLLocation, withAccelerometerData data: CMAccelerometerData?) {
+        let hmsLocation = HMSLocation.insertNewObject(into: viewManagedObjectContext)
+        hmsLocation.configure(with: location)
+        session?.addToEntries(hmsLocation)
+
+        if let accelerometerData = data {
+            let hmsAcceleromter = HMSAccelerometerData.insertNewObject(into: viewManagedObjectContext)
+            hmsAcceleromter.configure(with: accelerometerData)
+            hmsLocation.accelerometerData = hmsAcceleromter
+            session?.addToEntries(hmsAcceleromter)
+        }
+    }
+    
+}
+
 extension SessionViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "EntryTableViewCell")!
         let entry = fetchedResultsController.object(at: indexPath)
@@ -217,26 +216,9 @@ extension SessionViewController: UITableViewDataSource {
     
 }
 
-extension SessionViewController: CLLocationManagerDelegate {
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        let userLocation = locations[0]
-        
-        let hmsLocation = HMSLocation.insertNewObject(into: viewManagedObjectContext)
-        hmsLocation.configure(with: userLocation)
-        session?.addToEntries(hmsLocation)
-        
-        if let accelerometerData = motionManager.accelerometerData {
-            let hmsAcceleromter = HMSAccelerometerData.insertNewObject(into: viewManagedObjectContext)
-            hmsAcceleromter.configure(with: accelerometerData)
-            hmsLocation.accelerometerData = hmsAcceleromter
-            session?.addToEntries(hmsAcceleromter)
-        }
-    }
-    
-}
 
 extension SessionViewController: NSFetchedResultsControllerDelegate {
+    
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
     }
@@ -261,4 +243,5 @@ extension SessionViewController: NSFetchedResultsControllerDelegate {
             ()
         }
     }
+    
 }

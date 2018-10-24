@@ -30,6 +30,10 @@
 	<string>Because every breath you take, and every move you make, I'll be watching you.</string>
 	<key>NSMotionUsageDescription</key>
 	<string>Because every breath you take, and every move you make, I'll be watching you.</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

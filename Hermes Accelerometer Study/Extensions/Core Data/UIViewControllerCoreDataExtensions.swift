@@ -11,12 +11,16 @@ import CoreData
 
 extension UIViewController {
     
+    var applicationDelegate: AppDelegate {
+        return UIApplication.shared.applicationDelegate
+    }
+    
     var persistentContainer: NSPersistentContainer {
-        return UIApplication.shared.applicationDelegate.persistentContainer
+        return applicationDelegate.persistentContainer
     }
     
     var viewManagedObjectContext: NSManagedObjectContext {
-        return persistentContainer.viewContext
+        return applicationDelegate.viewManagedObjectContext
     }
     
     func newBackgroundContext() -> NSManagedObjectContext {
@@ -29,7 +33,7 @@ extension UIViewController {
             try managedObjectContext.save()
             hideLoading(procesId: processId)
         } catch {
-            present(UIAlertController(error: error), animated: true)
+            present(error: error)
         }
     }
     
