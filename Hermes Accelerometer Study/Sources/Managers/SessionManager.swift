@@ -21,7 +21,6 @@ protocol SessionManagerDelegate: class {
 class SessionManager: NSObject {
     
     weak var delegate: SessionManagerDelegate?
-    var isRecording: Bool = false
     
     private let motionManager = CMMotionManager()
     private let motionActivityManager = CMMotionActivityManager()
@@ -29,14 +28,12 @@ class SessionManager: NSObject {
     private var accelerometerUpdateInterval: Double = 1/60
     
     func stopUpdates() {
-        isRecording = false
         motionManager.stopAccelerometerUpdates()
         locationManager.stopUpdatingLocation()
         motionActivityManager.stopActivityUpdates()
     }
     
     func startUpdates() {
-        isRecording = true
         if motionManager.isAccelerometerAvailable {
             motionManager.accelerometerUpdateInterval = accelerometerUpdateInterval
             motionManager.startAccelerometerUpdates()

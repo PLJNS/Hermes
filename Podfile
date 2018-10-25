@@ -8,6 +8,7 @@ target 'Hermes Accelerometer Study' do
   # Pods for Hermes Accelerometer Study
 
   pod 'CSV.swift', '~> 2.2.1'
+  pod 'Dwifft'
 
   target 'Hermes Accelerometer StudyTests' do
     inherit! :search_paths

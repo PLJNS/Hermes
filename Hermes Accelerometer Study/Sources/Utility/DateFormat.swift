@@ -9,9 +9,11 @@
 import Foundation
 
 enum DateFormat: String, DateFormatConvertible {
+    
     case yyyyMMddHHmmss = "yyyy-MM-dd HH:mm:ss"
     
     var dateFormat: String {
         return rawValue
     }
+    
 }

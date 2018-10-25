@@ -31,6 +31,8 @@
 		2761E8CB217F9721004B16F6 /* DateConvertibleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8CA217F9721004B16F6 /* DateConvertibleExtensions.swift */; };
 		2761E8CD217F9739004B16F6 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8CC217F9739004B16F6 /* DateFormat.swift */; };
 		2761E8CF217FBFCB004B16F6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8CE217FBFCB004B16F6 /* SessionManager.swift */; };
+		2761E8D12180CA06004B16F6 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8D02180CA06004B16F6 /* BluetoothViewController.swift */; };
+		2761E8D6218220BB004B16F6 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8D5218220BB004B16F6 /* BluetoothManager.swift */; };
 		27DD5E3F217514C800F56FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E3E217514C800F56FFE /* AppDelegate.swift */; };
 		27DD5E44217514C800F56FFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DD5E42217514C800F56FFE /* Main.storyboard */; };
 		27DD5E47217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E45217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld */; };
@@ -88,6 +90,8 @@
 		2761E8CA217F9721004B16F6 /* DateConvertibleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConvertibleExtensions.swift; sourceTree = "<group>"; };
 		2761E8CC217F9739004B16F6 /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
 		2761E8CE217FBFCB004B16F6 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		2761E8D02180CA06004B16F6 /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
+		2761E8D5218220BB004B16F6 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		27DD5E3B217514C800F56FFE /* Hermes Accelerometer Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hermes Accelerometer Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DD5E3E217514C800F56FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27DD5E43217514C800F56FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -227,14 +231,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		2761E8BD217F9534004B16F6 /* Shared */ = {
+		2761E8BD217F9534004B16F6 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
 				274B804C2178EE2600BD1A57 /* PrimarySplitViewController.swift */,
 				2761E8C3217F95E9004B16F6 /* UserDefaults.swift */,
 				2761E8CC217F9739004B16F6 /* DateFormat.swift */,
 			);
-			path = Shared;
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		2761E8C0217F95AE004B16F6 /* UserDefaults */ = {
@@ -254,6 +258,54 @@
 				2761E8BE217F957D004B16F6 /* DateFormatterConvertibleExtensions.swift */,
 			);
 			path = Date;
+			sourceTree = "<group>";
+		};
+		2761E8D22180F87D004B16F6 /* Location and Activity Session */ = {
+			isa = PBXGroup;
+			children = (
+				274B8059217909E800BD1A57 /* SessionsViewController.swift */,
+				274B805B217909F400BD1A57 /* SessionViewController.swift */,
+				274B805D21790C1000BD1A57 /* AddSessionViewController.swift */,
+			);
+			path = "Location and Activity Session";
+			sourceTree = "<group>";
+		};
+		2761E8D32180F8A2004B16F6 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				2761E8D02180CA06004B16F6 /* BluetoothViewController.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		2761E8D42180F8AC004B16F6 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				2761E8D22180F87D004B16F6 /* Location and Activity Session */,
+				2761E8D32180F8A2004B16F6 /* Bluetooth */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		2761E8D721822185004B16F6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2761E8CE217FBFCB004B16F6 /* SessionManager.swift */,
+				2761E8D5218220BB004B16F6 /* BluetoothManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2761E8D8218221B2004B16F6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2761E8B1217F9320004B16F6 /* Core Data Model Extensions */,
+				2761E8BC217F94FD004B16F6 /* Extensions */,
+				2761E8D721822185004B16F6 /* Managers */,
+				2761E8BD217F9534004B16F6 /* Utility */,
+				2761E8D42180F8AC004B16F6 /* VCs */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		27DD5E32217514C800F56FFE = {
@@ -283,17 +335,11 @@
 			children = (
 				27DD5E3E217514C800F56FFE /* AppDelegate.swift */,
 				27DD5E42217514C800F56FFE /* Main.storyboard */,
-				274B8059217909E800BD1A57 /* SessionsViewController.swift */,
-				274B805B217909F400BD1A57 /* SessionViewController.swift */,
-				274B805D21790C1000BD1A57 /* AddSessionViewController.swift */,
-				2761E8CE217FBFCB004B16F6 /* SessionManager.swift */,
+				2761E8D8218221B2004B16F6 /* Sources */,
 				27DD5E48217514CD00F56FFE /* Assets.xcassets */,
 				27DD5E4A217514CD00F56FFE /* LaunchScreen.storyboard */,
 				27DD5E4D217514CD00F56FFE /* Info.plist */,
 				27DD5E45217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld */,
-				2761E8BD217F9534004B16F6 /* Shared */,
-				2761E8B1217F9320004B16F6 /* Core Data Model Extensions */,
-				2761E8BC217F94FD004B16F6 /* Extensions */,
 			);
 			path = "Hermes Accelerometer Study";
 			sourceTree = "<group>";
@@ -524,10 +570,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Hermes Accelerometer Study/Pods-Hermes Accelerometer Study-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CSV.swift/CSV.framework",
+				"${BUILT_PRODUCTS_DIR}/Dwifft/Dwifft.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSV.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dwifft.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -566,8 +614,10 @@
 				2761E8BF217F957D004B16F6 /* DateFormatterConvertibleExtensions.swift in Sources */,
 				2761E8B3217F936D004B16F6 /* UInt32Extensions.swift in Sources */,
 				274B80572179090500BD1A57 /* CMMotionActivityExtensions.swift in Sources */,
+				2761E8D6218220BB004B16F6 /* BluetoothManager.swift in Sources */,
 				2761E8C4217F95E9004B16F6 /* UserDefaults.swift in Sources */,
 				27DD5E762176561A00F56FFE /* UserDefaultsExtensions.swift in Sources */,
+				2761E8D12180CA06004B16F6 /* BluetoothViewController.swift in Sources */,
 				2761E8AE217F92F7004B16F6 /* HMSMotionActivityExtensions.swift in Sources */,
 				27DD5E3F217514C800F56FFE /* AppDelegate.swift in Sources */,
 			);

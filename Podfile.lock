@@ -1,16 +1,20 @@
 PODS:
   - CSV.swift (2.2.1)
+  - Dwifft (0.9)
 
 DEPENDENCIES:
   - CSV.swift (~> 2.2.1)
+  - Dwifft
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CSV.swift
+    - Dwifft
 
 SPEC CHECKSUMS:
   CSV.swift: 5bf3338aff82371cb51cc6dc559d7b45a74bab14
+  Dwifft: 42912068ed2a8146077d1a1404df18625bd086e1
 
-PODFILE CHECKSUM: 47bba02e7fc687d6a69bf7e933afb74d74440e22
+PODFILE CHECKSUM: 3bf835296e68ed97dc0d60b6a826a80408f701bf
 
 COCOAPODS: 1.5.3

@@ -33,10 +33,10 @@
         <relationship name="entries" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="HMSEntry" inverseName="session" inverseEntity="HMSEntry" syncable="YES"/>
     </entity>
     <elements>
-        <element name="HMSAccelerometerData" positionX="-536.47265625" positionY="270.671875" width="128" height="90"/>
+        <element name="HMSAccelerometerData" positionX="-658.5234375" positionY="282.60546875" width="128" height="90"/>
         <element name="HMSEntry" positionX="-363.48828125" positionY="28.44921875" width="128" height="75"/>
         <element name="HMSLocation" positionX="-358.00390625" positionY="274.58203125" width="128" height="135"/>
         <element name="HMSMotionActivity" positionX="-152.29296875" positionY="271.0234375" width="128" height="165"/>
-        <element name="HMSSession" positionX="-358.96875" positionY="-149.6171875" width="128" height="90"/>
+        <element name="HMSSession" positionX="-368.15234375" positionY="-172.6640625" width="128" height="90"/>
     </elements>
 </model>

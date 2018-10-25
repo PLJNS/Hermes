@@ -10,7 +10,8 @@ import UIKit
 import CoreData
 
 class SessionsViewController: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet private weak var tableView: UITableView!
     
     lazy var fetchedResultsController: NSFetchedResultsController<HMSSession> = {
         let fetchRequest: NSFetchRequest<HMSSession> = HMSSession.fetchRequest()
@@ -72,6 +73,7 @@ class SessionsViewController: UIViewController {
 }
 
 extension SessionsViewController: UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SessionTableViewCell")!
         let session = fetchedResultsController.object(at: indexPath)
@@ -93,6 +95,7 @@ extension SessionsViewController: UITableViewDataSource {
             save(managedObjectContext: viewManagedObjectContext)
         }
     }
+    
 }
 
 extension SessionsViewController: UITableViewDelegate {
@@ -113,6 +116,7 @@ extension SessionsViewController: UITableViewDelegate {
 }
 
 extension SessionsViewController: NSFetchedResultsControllerDelegate {
+    
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
     }
@@ -137,4 +141,5 @@ extension SessionsViewController: NSFetchedResultsControllerDelegate {
             ()
         }
     }
+    
 }

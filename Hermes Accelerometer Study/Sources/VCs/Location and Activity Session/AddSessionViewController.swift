@@ -14,6 +14,6 @@ class AddSessionViewController: UIViewController {
         return textField.text
     }
     
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet private weak var textField: UITextField!
     
 }
