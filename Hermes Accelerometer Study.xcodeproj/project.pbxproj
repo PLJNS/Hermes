@@ -33,6 +33,7 @@
 		2761E8CF217FBFCB004B16F6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8CE217FBFCB004B16F6 /* SessionManager.swift */; };
 		2761E8D12180CA06004B16F6 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8D02180CA06004B16F6 /* BluetoothViewController.swift */; };
 		2761E8D6218220BB004B16F6 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8D5218220BB004B16F6 /* BluetoothManager.swift */; };
+		2761E8DA21825C38004B16F6 /* BluetoothDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8D921825C38004B16F6 /* BluetoothDetailViewController.swift */; };
 		27DD5E3F217514C800F56FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E3E217514C800F56FFE /* AppDelegate.swift */; };
 		27DD5E44217514C800F56FFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DD5E42217514C800F56FFE /* Main.storyboard */; };
 		27DD5E47217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E45217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld */; };
@@ -92,6 +93,7 @@
 		2761E8CE217FBFCB004B16F6 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		2761E8D02180CA06004B16F6 /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
 		2761E8D5218220BB004B16F6 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		2761E8D921825C38004B16F6 /* BluetoothDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDetailViewController.swift; sourceTree = "<group>"; };
 		27DD5E3B217514C800F56FFE /* Hermes Accelerometer Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hermes Accelerometer Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27DD5E3E217514C800F56FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27DD5E43217514C800F56FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				2761E8D02180CA06004B16F6 /* BluetoothViewController.swift */,
+				2761E8D921825C38004B16F6 /* BluetoothDetailViewController.swift */,
 			);
 			path = Bluetooth;
 			sourceTree = "<group>";
@@ -335,9 +338,9 @@
 			children = (
 				27DD5E3E217514C800F56FFE /* AppDelegate.swift */,
 				27DD5E42217514C800F56FFE /* Main.storyboard */,
-				2761E8D8218221B2004B16F6 /* Sources */,
 				27DD5E48217514CD00F56FFE /* Assets.xcassets */,
 				27DD5E4A217514CD00F56FFE /* LaunchScreen.storyboard */,
+				2761E8D8218221B2004B16F6 /* Sources */,
 				27DD5E4D217514CD00F56FFE /* Info.plist */,
 				27DD5E45217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld */,
 			);
@@ -611,6 +614,7 @@
 				2761E8C6217F9613004B16F6 /* FormatterExtensions.swift in Sources */,
 				27DD5E47217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld in Sources */,
 				274B805C217909F400BD1A57 /* SessionViewController.swift in Sources */,
+				2761E8DA21825C38004B16F6 /* BluetoothDetailViewController.swift in Sources */,
 				2761E8BF217F957D004B16F6 /* DateFormatterConvertibleExtensions.swift in Sources */,
 				2761E8B3217F936D004B16F6 /* UInt32Extensions.swift in Sources */,
 				274B80572179090500BD1A57 /* CMMotionActivityExtensions.swift in Sources */,

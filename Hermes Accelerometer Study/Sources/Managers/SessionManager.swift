@@ -33,25 +33,38 @@ class SessionManager: NSObject {
         motionActivityManager.stopActivityUpdates()
     }
     
-    func startUpdates() {
-        if motionManager.isAccelerometerAvailable {
-            motionManager.accelerometerUpdateInterval = accelerometerUpdateInterval
-            motionManager.startAccelerometerUpdates()
-        }
-        
-        motionActivityManager.startActivityUpdates(to: .main) { [weak self] (activity) in
-            guard let strongSelf = self else { return }
-            if let activity = activity {
-                strongSelf.delegate?.didUpdateActivity(activity)
-            }
-        }
-        
+    func startUpdatingLocation() {
+        startMotionActivityManager()
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
     }
     
+    func startMonitoringSignificantLocationChanges() {
+        startMotionActivityManager()
+        locationManager.delegate = self
+        locationManager.startMonitoringSignificantLocationChanges()
+    }
+    
+}
+
+private extension SessionManager {
+    func startAccelerometerUpdates() {
+        if motionManager.isAccelerometerAvailable {
+            motionManager.accelerometerUpdateInterval = accelerometerUpdateInterval
+            motionManager.startAccelerometerUpdates()
+        }
+    }
+    
+    func startMotionActivityManager() {
+        motionActivityManager.startActivityUpdates(to: .main) { [weak self] (activity) in
+            guard let strongSelf = self else { return }
+            if let activity = activity {
+                strongSelf.delegate?.didUpdateActivity(activity)
+            }
+        }
+    }
 }
 
 extension SessionManager: CLLocationManagerDelegate {

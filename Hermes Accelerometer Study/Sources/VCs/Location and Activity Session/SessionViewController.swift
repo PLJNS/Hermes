@@ -166,7 +166,7 @@ class SessionViewController: UIViewController {
             navigationItem.setRightBarButtonItems([pauseBarButtonItem, trashBarButtonItem, shareBarButtonItem], animated: true)
             navigationItem.hidesBackButton = true
             trashBarButtonItem.isEnabled = false
-            sessionManager.startUpdates()
+            sessionManager.startUpdatingLocation()
         default:
             ()
         }

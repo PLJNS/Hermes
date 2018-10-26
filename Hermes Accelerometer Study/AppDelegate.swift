@@ -21,11 +21,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         if let _ = launchOptions?[.location] {
+            sessionManager.startMonitoringSignificantLocationChanges()
             session = HMSSession.insertNewObject(into: viewManagedObjectContext)
             session?.name = "\(Date().iso8601) Background Mode"
-            sessionManager.delegate = self
-            sessionManager.startUpdates()
         }
+        
+        sessionManager.delegate = self
+        sessionManager.startMonitoringSignificantLocationChanges()
+        
+        if let centralManagerIdentifiers = launchOptions?[.bluetoothCentrals] as? [String] {
+            print(centralManagerIdentifiers)
+        }
+        
         return true
     }
 
@@ -81,25 +88,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 extension AppDelegate: SessionManagerDelegate {
     
     func didUpdateActivity(_ activity: CMMotionActivity) {
-        let hmsMotionActivity = HMSMotionActivity.insertNewObject(into: viewManagedObjectContext)
-        hmsMotionActivity.configure(with: activity)
-        session?.addToEntries(hmsMotionActivity)
-        saveContext()
+        if let session = session {
+            let hmsMotionActivity = HMSMotionActivity.insertNewObject(into: viewManagedObjectContext)
+            hmsMotionActivity.configure(with: activity)
+            session.addToEntries(hmsMotionActivity)
+            saveContext()
+        }
     }
     
     func didUpdateLocation(_ location: CLLocation, withAccelerometerData data: CMAccelerometerData?) {
-        let hmsLocation = HMSLocation.insertNewObject(into: viewManagedObjectContext)
-        hmsLocation.configure(with: location)
-        session?.addToEntries(hmsLocation)
-        
-        if let accelerometerData = data {
-            let hmsAcceleromter = HMSAccelerometerData.insertNewObject(into: viewManagedObjectContext)
-            hmsAcceleromter.configure(with: accelerometerData)
-            hmsLocation.accelerometerData = hmsAcceleromter
-            session?.addToEntries(hmsAcceleromter)
+        if let session = session {
+            let hmsLocation = HMSLocation.insertNewObject(into: viewManagedObjectContext)
+            hmsLocation.configure(with: location)
+            session.addToEntries(hmsLocation)
+            
+            if let accelerometerData = data {
+                let hmsAcceleromter = HMSAccelerometerData.insertNewObject(into: viewManagedObjectContext)
+                hmsAcceleromter.configure(with: accelerometerData)
+                hmsLocation.accelerometerData = hmsAcceleromter
+                session.addToEntries(hmsAcceleromter)
+            }
+            
+            saveContext()
         }
-        
-        saveContext()
     }
     
 }

@@ -23,7 +23,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ra1-QI-Pgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1629" y="1553"/>
+            <point key="canvasLocation" x="-1470" y="1577"/>
         </scene>
         <!--Sessions-->
         <scene sceneID="owp-AJ-R5m">
@@ -77,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wmP-E7-j9a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-772" y="1552"/>
+            <point key="canvasLocation" x="-610" y="1577"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="txD-ok-QIY">
@@ -93,7 +93,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P8S-Pe-d7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-20" y="1551"/>
+            <point key="canvasLocation" x="142" y="1576"/>
         </scene>
         <!--Add Session View Controller-->
         <scene sceneID="gZW-si-0vl">
@@ -143,7 +143,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xJQ-Ec-dmr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="9Hp-8y-ZLs" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="692" y="1550"/>
+            <point key="canvasLocation" x="948" y="1578"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ane-H2-dsc">
@@ -159,7 +159,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Orv-3g-sbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1630" y="2334"/>
+            <point key="canvasLocation" x="-1470" y="2360"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="q0G-m1-Ym7">
@@ -177,22 +177,126 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GHc-89-hsF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3361" y="3167"/>
+            <point key="canvasLocation" x="-3212" y="2732"/>
         </scene>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="k9o-dU-iZD">
+            <objects>
+                <navigationController id="czC-KY-4he" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WS9-sV-KtM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BTl-y1-9AC" kind="relationship" relationship="rootViewController" id="UM4-GA-SoF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TBg-m6-UN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1471" y="3869"/>
+        </scene>
+        <!--Bluetooth-->
         <scene sceneID="Qjm-rW-ITN">
             <objects>
-                <viewController id="BTl-y1-9AC" sceneMemberID="viewController">
+                <viewController id="BTl-y1-9AC" customClass="BluetoothDetailViewController" customModule="Hermes_Accelerometer_Study" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AyZ-bT-PGq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="P8e-iR-WVN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VZB-oc-cWp">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="277"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAo-Pn-HBm">
+                                        <rect key="frame" x="0.0" y="277" width="375" height="277"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="d7Y-U3-XRP">
+                                                <rect key="frame" x="20" y="20" width="335" height="237"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="mTK-TW-QCu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="53.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notify on Connection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFW-tE-EvZ">
+                                                                <rect key="frame" x="0.0" y="16.5" width="278" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yqC-5Z-sWx">
+                                                                <rect key="frame" x="286" y="11" width="51" height="31"/>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CCs-Yp-Ma1">
+                                                        <rect key="frame" x="0.0" y="61.5" width="335" height="53"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notify on Disconnection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51z-3i-qMK">
+                                                                <rect key="frame" x="0.0" y="16" width="278" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ml8-9F-umZ">
+                                                                <rect key="frame" x="286" y="11" width="51" height="31"/>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvU-EY-Xlj">
+                                                        <rect key="frame" x="0.0" y="122.5" width="335" height="53.5"/>
+                                                        <state key="normal" title="Connect"/>
+                                                        <connections>
+                                                            <action selector="buttonDidTouchUpInside:" destination="BTl-y1-9AC" eventType="touchUpInside" id="t91-0d-WA2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYO-IP-dP0">
+                                                        <rect key="frame" x="0.0" y="184" width="335" height="53"/>
+                                                        <state key="normal" title="Disconnect"/>
+                                                        <connections>
+                                                            <action selector="buttonDidTouchUpInside:" destination="BTl-y1-9AC" eventType="touchUpInside" id="Zb6-Jl-Mwe"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="d7Y-U3-XRP" secondAttribute="trailing" constant="20" id="5Ah-Vk-QzV"/>
+                                            <constraint firstItem="d7Y-U3-XRP" firstAttribute="leading" secondItem="IAo-Pn-HBm" secondAttribute="leading" constant="20" id="QHr-di-0Yv"/>
+                                            <constraint firstAttribute="bottom" secondItem="d7Y-U3-XRP" secondAttribute="bottom" constant="20" id="nDC-bo-VQj"/>
+                                            <constraint firstItem="d7Y-U3-XRP" firstAttribute="top" secondItem="IAo-Pn-HBm" secondAttribute="top" constant="20" id="vY9-EL-xbW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <variation key="heightClass=compact" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="P8e-iR-WVN" firstAttribute="trailing" secondItem="dzP-zI-a2C" secondAttribute="trailing" id="A5d-AP-mFI"/>
+                            <constraint firstItem="P8e-iR-WVN" firstAttribute="top" secondItem="dzP-zI-a2C" secondAttribute="top" id="cBv-0n-pxi"/>
+                            <constraint firstItem="P8e-iR-WVN" firstAttribute="leading" secondItem="dzP-zI-a2C" secondAttribute="leading" id="had-Xr-Vfh"/>
+                            <constraint firstItem="P8e-iR-WVN" firstAttribute="bottom" secondItem="dzP-zI-a2C" secondAttribute="bottom" id="jxz-Fw-UlM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dzP-zI-a2C"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Bluetooth" id="TPO-89-U6u"/>
+                    <connections>
+                        <outlet property="connectButton" destination="mvU-EY-Xlj" id="sL4-as-Yug"/>
+                        <outlet property="disconnectButton" destination="vYO-IP-dP0" id="Ezs-Ht-zqM"/>
+                        <outlet property="notifyOnConnectionSwitch" destination="yqC-5Z-sWx" id="9L9-fg-hgw"/>
+                        <outlet property="notifyOnDisconnectionSwitch" destination="ml8-9F-umZ" id="gbc-2L-dMD"/>
+                        <outlet property="textView" destination="VZB-oc-cWp" id="0Hg-om-XkR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Vz-K4-WE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1469" y="3761"/>
+            <point key="canvasLocation" x="-663.20000000000005" y="3868.5157421289359"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8LI-0R-Ex1">
@@ -263,6 +367,7 @@
                         <viewLayoutGuide key="safeArea" id="khj-0K-0um"/>
                     </view>
                     <navigationItem key="navigationItem" title="Bluetooth" id="fpm-eW-FMo">
+                        <barButtonItem key="leftBarButtonItem" title="Connections" id="iy1-12-Vbr" userLabel="Connections"/>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="play" id="Hh5-m6-bml">
                                 <connections>
@@ -280,11 +385,12 @@
                         <outlet property="pauseBarButtonItem" destination="LVG-mA-GDI" id="f0p-UN-rqh"/>
                         <outlet property="playBarButtonItem" destination="Hh5-m6-bml" id="hga-Fd-xdJ"/>
                         <outlet property="tableView" destination="M1e-iJ-WSO" id="Jiz-bO-0qI"/>
+                        <segue destination="czC-KY-4he" kind="showDetail" identifier="BluetoothViewController_to_BluetoothDetailViewController" id="bX6-1Z-7Le"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S2d-cd-FHX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-663.20000000000005" y="3076.9115442278862"/>
+            <point key="canvasLocation" x="-663" y="3097"/>
         </scene>
         <!--Bluetooth-->
         <scene sceneID="9By-FH-C6D">
@@ -293,12 +399,12 @@
                     <tabBarItem key="tabBarItem" title="Bluetooth" image="bluetooth_icon" id="vfx-Se-LZE"/>
                     <connections>
                         <segue destination="Ac1-sy-0El" kind="relationship" relationship="masterViewController" id="ofn-ns-ZgP"/>
-                        <segue destination="BTl-y1-9AC" kind="relationship" relationship="detailViewController" id="Hvm-Jq-WVx"/>
+                        <segue destination="czC-KY-4he" kind="relationship" relationship="detailViewController" id="R6w-P6-gV8"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bB1-Vr-qJ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2419" y="3428"/>
+            <point key="canvasLocation" x="-2420" y="3097"/>
         </scene>
         <!--Location-->
         <scene sceneID="w7u-cd-bVW">
@@ -312,7 +418,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C8b-94-u0i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2581" y="1884"/>
+            <point key="canvasLocation" x="-2420" y="2360"/>
         </scene>
         <!--Session View Controller-->
         <scene sceneID="k51-kj-ZxX">
@@ -400,7 +506,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WH2-tG-eMZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-772" y="2322"/>
+            <point key="canvasLocation" x="-610" y="2360"/>
         </scene>
     </scenes>
     <resources>
@@ -408,6 +514,7 @@
         <image name="location_icon" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="bX6-1Z-7Le"/>
         <segue reference="ghM-Ox-g92"/>
     </inferredMetricsTieBreakers>
 </document>

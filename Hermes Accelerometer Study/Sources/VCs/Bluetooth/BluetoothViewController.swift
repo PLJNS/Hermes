@@ -26,6 +26,20 @@ class BluetoothViewController: UIViewController {
         navigationItem.rightBarButtonItems = [pauseBarButtonItem]
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier ?? "" {
+        case "BluetoothViewController_to_BluetoothDetailViewController":
+            guard let destination = (segue.destination as? UINavigationController)?.viewControllers[0] as? BluetoothDetailViewController else {
+                fatalError()
+            }
+            
+            destination.peripheral = dataSource.rows[tableView.indexPathForSelectedRow?.row ?? 0]
+            destination.bluetoothManager = bluetoothManager
+        default:
+            ()
+        }
+    }
+    
     @IBAction func didSelectBarButtonItem(_ sender: UIBarButtonItem) {
         switch sender {
         case pauseBarButtonItem:
@@ -62,12 +76,7 @@ extension BluetoothViewController: UITableViewDataSource {
 extension BluetoothViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let peripheral = dataSource.rows[indexPath.row]
-        if bluetoothManager.isConnected(toPeripheral: peripheral) {
-            bluetoothManager.disconnect(peripheral: peripheral)
-        } else {
-            bluetoothManager.connect(peripheral: peripheral, notify: false)
-        }
+        performSegue(withIdentifier: "BluetoothViewController_to_BluetoothDetailViewController", sender: self)
     }
     
 }

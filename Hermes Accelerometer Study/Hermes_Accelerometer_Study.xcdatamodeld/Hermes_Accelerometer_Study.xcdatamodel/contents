@@ -5,6 +5,9 @@
         <attribute name="y" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="z" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
     </entity>
+    <entity name="HMSBluetoothBackgroundNotification" representedClassName="HMSBluetoothBackgroundNotification" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
     <entity name="HMSEntry" representedClassName="HMSEntry" isAbstract="YES" syncable="YES" codeGenerationType="class">
         <attribute name="createdAt" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <relationship name="session" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="HMSSession" inverseName="entries" inverseEntity="HMSSession" syncable="YES"/>
@@ -38,5 +41,6 @@
         <element name="HMSLocation" positionX="-358.00390625" positionY="274.58203125" width="128" height="135"/>
         <element name="HMSMotionActivity" positionX="-152.29296875" positionY="271.0234375" width="128" height="165"/>
         <element name="HMSSession" positionX="-368.15234375" positionY="-172.6640625" width="128" height="90"/>
+        <element name="HMSBluetoothBackgroundNotification" positionX="-805.2109375" positionY="78" width="128" height="60"/>
     </elements>
 </model>

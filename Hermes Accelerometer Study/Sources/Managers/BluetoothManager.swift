@@ -15,6 +15,14 @@ protocol BluetoothManagerDelegate: class {
     func bluetoothManager(_ bluetoothManager: BluetoothManager, didAttemptConnectionTo peripheral: CBPeripheral, error: Error?)
 }
 
+extension Notification.Name {
+    
+    static let BluetoothManagerDidConnectToPeripheral = Notification.Name(rawValue: "BluetoothManagerDidConnectToPeripheral")
+    
+    static let BluetoothManagerDidDisconnectFromPeripheral = Notification.Name(rawValue: "BluetoothManagerDidDisconnectFromPeripheral")
+    
+}
+
 class BluetoothManager: NSObject {
     
     weak var delegate: BluetoothManagerDelegate?
@@ -41,15 +49,11 @@ class BluetoothManager: NSObject {
         connectedPeripherals = manager.retrieveConnectedPeripherals(withServices: [])
     }
     
-    func connect(peripheral: CBPeripheral, notify: Bool) {
-        var options: [String: Any] = [:]
-        
-        if notify {
-            options[CBConnectPeripheralOptionNotifyOnConnectionKey] = NSNumber(booleanLiteral: true)
-            options[CBConnectPeripheralOptionNotifyOnDisconnectionKey] = NSNumber(booleanLiteral: true)
-        }
-
-        manager.connect(peripheral, options: options)
+    func connect(peripheral: CBPeripheral, notifyOnConnection: Bool, notifyOnDisconnection: Bool) {
+        manager.connect(peripheral, options: [
+            CBConnectPeripheralOptionNotifyOnConnectionKey : NSNumber(booleanLiteral: notifyOnConnection),
+            CBConnectPeripheralOptionNotifyOnDisconnectionKey : NSNumber(booleanLiteral: notifyOnDisconnection)
+        ])
     }
     
     func disconnect(peripheral: CBPeripheral) {
