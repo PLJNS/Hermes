@@ -17,7 +17,6 @@
 		274B805E21790C1000BD1A57 /* AddSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B805D21790C1000BD1A57 /* AddSessionViewController.swift */; };
 		274B80622179165200BD1A57 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B80612179165200BD1A57 /* StringExtensions.swift */; };
 		2761E8AA217F928D004B16F6 /* HMSLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8A9217F928D004B16F6 /* HMSLocationExtensions.swift */; };
-		2761E8AC217F92A9004B16F6 /* HMSAccelerometerDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8AB217F92A9004B16F6 /* HMSAccelerometerDataExtensions.swift */; };
 		2761E8AE217F92F7004B16F6 /* HMSMotionActivityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8AD217F92F7004B16F6 /* HMSMotionActivityExtensions.swift */; };
 		2761E8B0217F9318004B16F6 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8AF217F9318004B16F6 /* DoubleExtensions.swift */; };
 		2761E8B3217F936D004B16F6 /* UInt32Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8B2217F936D004B16F6 /* UInt32Extensions.swift */; };
@@ -56,7 +55,6 @@
 		274B805D21790C1000BD1A57 /* AddSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSessionViewController.swift; sourceTree = "<group>"; };
 		274B80612179165200BD1A57 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		2761E8A9217F928D004B16F6 /* HMSLocationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMSLocationExtensions.swift; sourceTree = "<group>"; };
-		2761E8AB217F92A9004B16F6 /* HMSAccelerometerDataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMSAccelerometerDataExtensions.swift; sourceTree = "<group>"; };
 		2761E8AD217F92F7004B16F6 /* HMSMotionActivityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMSMotionActivityExtensions.swift; sourceTree = "<group>"; };
 		2761E8AF217F9318004B16F6 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
 		2761E8B2217F936D004B16F6 /* UInt32Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt32Extensions.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				2761E8A9217F928D004B16F6 /* HMSLocationExtensions.swift */,
-				2761E8AB217F92A9004B16F6 /* HMSAccelerometerDataExtensions.swift */,
 				2761E8AD217F92F7004B16F6 /* HMSMotionActivityExtensions.swift */,
 			);
 			path = "Core Data Model Extensions";
@@ -432,7 +429,6 @@
 				27DD5E7021764D5700F56FFE /* UIViewControllerExtensions.swift in Sources */,
 				27DD5E7221764D6F00F56FFE /* UIAlertControllerExtensions.swift in Sources */,
 				2761E8AA217F928D004B16F6 /* HMSLocationExtensions.swift in Sources */,
-				2761E8AC217F92A9004B16F6 /* HMSAccelerometerDataExtensions.swift in Sources */,
 				2761E8B9217F94BA004B16F6 /* UIViewControllerCoreDataExtensions.swift in Sources */,
 				274B8055217908F100BD1A57 /* IntExtensions.swift in Sources */,
 				274B804D2178EE2600BD1A57 /* PrimarySplitViewController.swift in Sources */,

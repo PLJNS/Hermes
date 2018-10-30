@@ -11,7 +11,10 @@ import UIKit
 extension UIViewController {
     
     func present(error: Error) {
-        present(UIAlertController(title: "Error", error: error), animated: true)
+        DispatchQueue.main.async { [weak self] in
+            guard let strongSelf = self else { return }
+            strongSelf.present(UIAlertController(title: "Error", error: error), animated: true)
+        }
     }
     
     public func showLoading(style: UIActivityIndicatorView.Style = .gray) -> Int {

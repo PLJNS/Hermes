@@ -8,8 +8,30 @@
 
 import CoreData
 import CoreMotion
+import CSV
+
+extension Collection where Element == HMSMotionActivity {
+    
+    func csv(filename: String) throws -> URL {
+        let url = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(filename)
+        if let outputStream = OutputStream(url: url, append: false) {
+            let csvWriter = try CSVWriter(stream: outputStream)
+            try csvWriter.write(row: HMSMotionActivity.csvHeader)
+            try forEach({try csvWriter.write(row: $0.csvRow)})
+            csvWriter.stream.close()
+        }
+        return url
+    }
+    
+}
 
 extension HMSMotionActivity {
+    
+    static var csvHeader: [String] = ["date", "activity", "confidence"]
+    
+    var csvRow: [String] {
+        return [createdAt?.iso8601 ?? "NA", stateString, "\(confidence)"]
+    }
     
     func configure(with data: CMMotionActivity) {
         confidence = Int16(data.confidence.rawValue)

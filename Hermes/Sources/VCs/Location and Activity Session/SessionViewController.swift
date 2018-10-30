@@ -78,90 +78,47 @@ class SessionViewController: UIViewController {
             motionActivityFetchRequest.sortDescriptors = [NSSortDescriptor(keyPath: \HMSMotionActivity.createdAt, ascending: false)]
             motionActivityFetchRequest.predicate = NSPredicate(format: "session.name == %@", sessionName)
             
-            var locationResultsUrl, motionActivityResultsUrl: URL?
+            var locationUrl, motionActivityUrl: URL?
             
             let processId = showLoading()
+            let dispatchGroup = DispatchGroup()
+            
+            dispatchGroup.enter()
             backgroundContext.perform { [weak self] in
                 guard let strongSelf = self else { return }
-                
-                let dispatchGroup = DispatchGroup()
-                if let locationResults = try? strongSelf.backgroundContext.fetch(locationFetchRequest) {
-                    dispatchGroup.enter()
-                    DispatchQueue.global().async {
-                        defer { dispatchGroup.leave() }
-                        let url = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("\(sessionName)_Location+Accelerometer.csv")
-                        locationResultsUrl = url
-                        if let stream = OutputStream(url: url, append: false) {
-                            var locationCSVWriter: CSVWriter?
-                            do {
-                                let locationWriter = try CSVWriter(stream: stream)
-                                try locationWriter.write(row: ["date", "latitude", "longitude", "course", "altitude", "speed", "x", "y", "z"])
-                                for location in locationResults {
-                                    try locationWriter.write(row: [
-                                        location.createdAt?.iso8601 ?? "NA",
-                                        "\(location.latitude)",
-                                        "\(location.longitude)",
-                                        "\(location.course)",
-                                        "\(location.altitude)",
-                                        "\(location.speed)",
-                                        "\(location.accelerometerData?.x ?? 0)",
-                                        "\(location.accelerometerData?.y ?? 0)",
-                                        "\(location.accelerometerData?.z ?? 0)"
-                                        ])
-                                }
-                                locationCSVWriter = locationWriter
-                            } catch {
-                                DispatchQueue.main.async { [weak self] in
-                                    guard let strongSelf = self else { return }
-                                    strongSelf.present(UIAlertController(error: error), animated: true)
-                                }
-                            }
-                            
-                            locationCSVWriter?.stream.close()
-                        }
-                    }
+                do {
+                    let results = try strongSelf.backgroundContext.fetch(locationFetchRequest)
+                    locationUrl = try results.csv(filename: "\(sessionName)_Location.csv")
+                } catch {
+                    strongSelf.present(error: error)
                 }
-                
-                if let motionActivityResults = try? strongSelf.backgroundContext.fetch(motionActivityFetchRequest) {
-                    let url = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("\(sessionName)_Motion_Activity.csv")
-                    dispatchGroup.enter()
-                    DispatchQueue.global().async {
-                        defer { dispatchGroup.leave() }
-                        motionActivityResultsUrl = url
-                        if let motionActivityStream = OutputStream(url: url, append: false) {
-                            var motionActivityCSVWriter: CSVWriter?
-                            do {
-                                let motionActivityWriter = try CSVWriter(stream: motionActivityStream)
-                                try motionActivityWriter.write(row: ["date", "activity", "confidence"])
-                                for motionActivity in motionActivityResults {
-                                    try motionActivityWriter.write(row: [
-                                        motionActivity.createdAt?.iso8601 ?? "NA",
-                                        motionActivity.stateString,
-                                        "\(motionActivity.confidence)"])
-                                }
-                                motionActivityCSVWriter = motionActivityWriter
-                            } catch {
-                                DispatchQueue.main.async { [weak self] in
-                                    guard let strongSelf = self else { return }
-                                    strongSelf.present(UIAlertController(error: error), animated: true)
-                                }
-                            }
-                            
-                            motionActivityCSVWriter?.stream.close()
-                        }
-                    }
+                dispatchGroup.leave()
+            }
+            
+            dispatchGroup.enter()
+            backgroundContext.perform { [weak self] in
+                guard let strongSelf = self else { return }
+                do {
+                    let results = try strongSelf.backgroundContext.fetch(motionActivityFetchRequest)
+                    motionActivityUrl = try results.csv(filename: "\(sessionName)_MotionActivity.csv")
+                } catch {
+                    strongSelf.present(error: error)
                 }
-                
+                dispatchGroup.leave()
+            }
+            
+            DispatchQueue.global().async {
                 dispatchGroup.wait()
                 DispatchQueue.main.async { [weak self] in
                     guard let strongSelf = self else { return }
                     strongSelf.hideLoading(procesId: processId)
-                    if let motionActivityResultsUrl = motionActivityResultsUrl, let locationResultsUrl = locationResultsUrl {
+                    if let motionActivityResultsUrl = motionActivityUrl, let locationResultsUrl = locationUrl {
                         let activityVC = UIActivityViewController(activityItems: [motionActivityResultsUrl, locationResultsUrl], applicationActivities: nil)
                         strongSelf.present(activityVC, animated: true)
                     }
                 }
             }
+            
         case playBarButtonItem:
             navigationItem.setRightBarButtonItems([pauseBarButtonItem, trashBarButtonItem, shareBarButtonItem], animated: true)
             navigationItem.hidesBackButton = true
@@ -186,13 +143,6 @@ extension SessionViewController: SessionManagerDelegate {
         let hmsLocation = HMSLocation.insertNewObject(into: viewManagedObjectContext)
         hmsLocation.configure(with: location)
         session?.addToEntries(hmsLocation)
-
-        if let accelerometerData = data {
-            let hmsAcceleromter = HMSAccelerometerData.insertNewObject(into: viewManagedObjectContext)
-            hmsAcceleromter.configure(with: accelerometerData)
-            hmsLocation.accelerometerData = hmsAcceleromter
-            session?.addToEntries(hmsAcceleromter)
-        }
     }
     
 }

@@ -127,15 +127,7 @@ extension AppDelegate: SessionManagerDelegate {
         if let session = session {
             let hmsLocation = HMSLocation.insertNewObject(into: viewManagedObjectContext)
             hmsLocation.configure(with: location)
-            session.addToEntries(hmsLocation)
-            
-            if let accelerometerData = data {
-                let hmsAcceleromter = HMSAccelerometerData.insertNewObject(into: viewManagedObjectContext)
-                hmsAcceleromter.configure(with: accelerometerData)
-                hmsLocation.accelerometerData = hmsAcceleromter
-                session.addToEntries(hmsAcceleromter)
-            }
-            
+            session.addToEntries(hmsLocation)            
             saveContext()
         }
     }

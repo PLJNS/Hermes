@@ -16,4 +16,8 @@ class AddSessionViewController: UIViewController {
     
     @IBOutlet private weak var textField: UITextField!
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        textField.becomeFirstResponder()
+    }
 }

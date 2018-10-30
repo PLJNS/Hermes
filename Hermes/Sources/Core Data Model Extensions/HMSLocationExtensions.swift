@@ -8,8 +8,30 @@
 
 import CoreData
 import CoreLocation
+import CSV
+
+extension Collection where Element == HMSLocation {
+    
+    func csv(filename: String) throws -> URL {
+        let url = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(filename)
+        if let stream = OutputStream(url: url, append: false) {
+            let writer = try CSVWriter(stream: stream)
+            try writer.write(row: HMSLocation.csvHeader)
+            try forEach({ try writer.write(row: $0.csvRow) })
+            writer.stream.close()
+        }
+        return url
+    }
+    
+}
 
 extension HMSLocation {
+    
+    static let csvHeader: [String] = ["date", "latitude", "longitude", "course", "altitude", "speed"]
+    
+    var csvRow: [String] {
+        return [createdAt?.iso8601 ?? "NA", "\(latitude)", "\(longitude)", "\(course)", "\(altitude)", "\(speed)"]
+    }
     
     func configure(with data: CLLocation) {
         latitude = data.coordinate.latitude
