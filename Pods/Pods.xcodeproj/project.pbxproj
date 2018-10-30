@@ -8,127 +8,85 @@
 
 /* Begin PBXBuildFile section */
 		0EF425D49A4B33E2F680F5E3613B5B75 /* CSV.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC631DEB24EB28171427DF9523C6AA3C /* CSV.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		133AF5420B50FE2253A974D83D07D037 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		1D865635B49CD023BA6445CBB603D777 /* Dwifft+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B48B9069C412FF7835BEB8527C6D0F7 /* Dwifft+UIKit.swift */; };
 		28434066CFF5F0C3BDC870444177F0F1 /* Dwifft-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D950D20D5F7E11565363B31C170387 /* Dwifft-dummy.m */; };
 		2F6943543FBFE0261B6EA84FA8F68BF3 /* CSVWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB396B18F6132D4D3D7C28DBFB631E /* CSVWriter.swift */; };
 		35872AF610AAF773021BE2290728B317 /* Dwifft+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77A41FADEBB5A46B88F05180CA5876A /* Dwifft+AppKit.swift */; };
-		35D3F69B31CE8580080785D338C89785 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		3C7A70D3428ACC40D6B098EA11958C20 /* CSVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A925A1AE9F333725EF8A51C69C4094 /* CSVError.swift */; };
-		43D4525DC25C274A348579DEAF6EA620 /* Pods-Hermes Accelerometer StudyUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55ED556D499579CA769283E36652FC15 /* Pods-Hermes Accelerometer StudyUITests-dummy.m */; };
-		4DFC7C141B00042F479948DDEA988435 /* Pods-Hermes Accelerometer StudyTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E33001DD11E7D00BBB391F1A7CE01A63 /* Pods-Hermes Accelerometer StudyTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42AECD334B9E812CFF7997996B302097 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		4EB3C7E861E1843C259CB3E2E855D384 /* Dwifft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B62336EF96EA8CC9DB75B33926BE739 /* Dwifft.swift */; };
 		529CAB3169FD4B7580C36502697F4BA2 /* Dwifft-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B219C3EDAC79C9B2954BC47791C7FB0E /* Dwifft-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5C2077235AF773ED7243781A3D3F7AD3 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4258131C3E30A03D3C9E34A50CA97CF3 /* CSV.swift */; };
-		6B7458DB061A20D9509271EBD8644015 /* Pods-Hermes Accelerometer Study-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B84A3BFDD339A9E5816B41CB0BF4CBF /* Pods-Hermes Accelerometer Study-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E5DFFD914B54ADB888741D9D3AAD2FF /* Pods-Hermes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3294B691E1435D5EAD3424874FDEA13A /* Pods-Hermes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FA90548BDAD962E51409D706FEB46C0 /* Pods-Hermes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D693FBDB26847D18DC428A7B5901FE /* Pods-Hermes-dummy.m */; };
 		962EE8BA9D67D1D4DD71C2D311CC19DD /* UnicodeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CED6D98375DD3AB7EF634037360AB5 /* UnicodeIterator.swift */; };
-		AB8A2A92A631D9F6DF8A2563483B81CB /* Pods-Hermes Accelerometer StudyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E583FFC1663EE61FEEC5DF5801F3968 /* Pods-Hermes Accelerometer StudyTests-dummy.m */; };
 		B021C3B950A41D10C91FD0FE0161CD98 /* SectionedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D26DD52646AF412A37880A477D263 /* SectionedValues.swift */; };
 		B38775B10F00A04518A4E9CD8F1ED16C /* AbstractDiffCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B111013F41E0C601D107F420AFD43B6 /* AbstractDiffCalculator.swift */; };
 		CA3E2B9DEA1BDD4B7CBA071D9AB69791 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		D26BE5587CDBBAA61B9F4B95789AFED7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		D7E60C7B750C385B68A987A075D3C4EE /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DEEF2749182EA8E0148B0DC0BC8BF4 /* CSVReader.swift */; };
-		D84C7F10233BA1F60A5A040301326F02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		DEE0F9F10ADFEE46888DB60DA71AF237 /* Endian.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F6BACC4D00BC7059FD5A53C79FD038 /* Endian.swift */; };
 		E92236D45CF1F30D03BCF0E9AD880164 /* CSV.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC23B71C18E0406700CD8956438F14C /* CSV.swift-dummy.m */; };
-		EED85222A2A1A820B09AA717E449EE5F /* Pods-Hermes Accelerometer Study-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B69565BC0D274687C0517E0CE301F96 /* Pods-Hermes Accelerometer Study-dummy.m */; };
 		F38A004C2FA214C953353978C51174AA /* BinaryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8B7469829279D3305E8FAA419BABBE /* BinaryReader.swift */; };
-		FB190D384176E68983A99BB9FC74C293 /* Pods-Hermes Accelerometer StudyUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF3AC2B228188F4F03479C3B7A648940 /* Pods-Hermes Accelerometer StudyUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		61AABBBD85AC503A5B112E2027F9E240 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B881263F5FBF1212B32FA2AABEFFB1CD;
-			remoteInfo = Dwifft;
-		};
-		6D2E0EAF5A20D9E86B27850A69FAE3C0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F11F1D5391FAB69DBB4B24052603D496;
-			remoteInfo = "Pods-Hermes Accelerometer Study";
-		};
-		829E45C16CF7538B09D201315354F40B /* PBXContainerItemProxy */ = {
+		AEF1E9C143D066312ADE2E22C7298C66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 701D4F02FAA85F5DE4F688FC7C082624;
 			remoteInfo = CSV.swift;
 		};
-		9027FD7B728FAB1092F79F098FA3B763 /* PBXContainerItemProxy */ = {
+		F6E6AB6286645E6C6B8E1D5EC2FBB987 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F11F1D5391FAB69DBB4B24052603D496;
-			remoteInfo = "Pods-Hermes Accelerometer Study";
+			remoteGlobalIDString = B881263F5FBF1212B32FA2AABEFFB1CD;
+			remoteInfo = Dwifft;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		038C6C02AB725128F85E1FFEAAF54164 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07205FCE0169D0A9DEA911793D417C4C /* CSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CSV.framework; path = CSV.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B69565BC0D274687C0517E0CE301F96 /* Pods-Hermes Accelerometer Study-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hermes Accelerometer Study-dummy.m"; sourceTree = "<group>"; };
-		0FE2B4AF5BA2F62F6B6333868EA09C17 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1333D12A46DDDB5132773150169A2E61 /* Dwifft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Dwifft.framework; path = Dwifft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		134A3DC47CF6D809408C77CB20A297FB /* Pods-Hermes-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hermes-resources.sh"; sourceTree = "<group>"; };
 		1469B4121E4962C301A4648428F819B2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		19D4587AACF2C264282802FD47B92780 /* Pods-Hermes Accelerometer StudyUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hermes Accelerometer StudyUITests-resources.sh"; sourceTree = "<group>"; };
 		1B111013F41E0C601D107F420AFD43B6 /* AbstractDiffCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AbstractDiffCalculator.swift; path = Dwifft/AbstractDiffCalculator.swift; sourceTree = "<group>"; };
 		22D950D20D5F7E11565363B31C170387 /* Dwifft-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Dwifft-dummy.m"; sourceTree = "<group>"; };
-		24D621FFFF619D9F29D0E7406A549760 /* Pods-Hermes Accelerometer StudyTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hermes Accelerometer StudyTests.modulemap"; sourceTree = "<group>"; };
-		25D4EE043B0E784DF6BB2A7D3ECD486F /* Pods-Hermes Accelerometer StudyTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hermes Accelerometer StudyTests-frameworks.sh"; sourceTree = "<group>"; };
-		2F4EEBE9A21B9C9C82F5F86FC3821854 /* Pods-Hermes Accelerometer StudyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hermes Accelerometer StudyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		41EEB8DEE72F7CD7F40C3DF833577550 /* Pods-Hermes Accelerometer StudyTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hermes Accelerometer StudyTests-resources.sh"; sourceTree = "<group>"; };
+		2905045058FD08733584ACE64C937598 /* Pods-Hermes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hermes.debug.xcconfig"; sourceTree = "<group>"; };
+		3294B691E1435D5EAD3424874FDEA13A /* Pods-Hermes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hermes-umbrella.h"; sourceTree = "<group>"; };
 		4258131C3E30A03D3C9E34A50CA97CF3 /* CSV.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSV.swift; path = Sources/CSV/CSV.swift; sourceTree = "<group>"; };
+		45D693FBDB26847D18DC428A7B5901FE /* Pods-Hermes-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hermes-dummy.m"; sourceTree = "<group>"; };
+		4660F31F164885BD8AF175DF36A80D47 /* Pods-Hermes-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hermes-frameworks.sh"; sourceTree = "<group>"; };
 		46A925A1AE9F333725EF8A51C69C4094 /* CSVError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVError.swift; path = Sources/CSV/CSVError.swift; sourceTree = "<group>"; };
-		4A854285166E56ED753BEFE9E7848ACC /* Pods-Hermes Accelerometer StudyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hermes Accelerometer StudyUITests.release.xcconfig"; sourceTree = "<group>"; };
-		55ED556D499579CA769283E36652FC15 /* Pods-Hermes Accelerometer StudyUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hermes Accelerometer StudyUITests-dummy.m"; sourceTree = "<group>"; };
+		48431F2C14A227FFFBD7189A051A887A /* Pods_Hermes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hermes.framework; path = "Pods-Hermes.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5466665B4C6F3DC77F02420DED10492E /* Pods-Hermes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hermes.release.xcconfig"; sourceTree = "<group>"; };
 		567D26DD52646AF412A37880A477D263 /* SectionedValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionedValues.swift; path = Dwifft/SectionedValues.swift; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5AB441A698FE8A1256A903F4171DE854 /* Pods_Hermes_Accelerometer_StudyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hermes_Accelerometer_StudyTests.framework; path = "Pods-Hermes Accelerometer StudyTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CBC17354A18229C0D6133304DC33C00 /* Pods-Hermes Accelerometer StudyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hermes Accelerometer StudyTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6031FE66472049107F16535D94015D9B /* Pods-Hermes Accelerometer Study.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hermes Accelerometer Study.debug.xcconfig"; sourceTree = "<group>"; };
 		6135F1A023574450CB7C51C113E9108E /* Dwifft-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dwifft-prefix.pch"; sourceTree = "<group>"; };
-		72130737A4E11DE93837824727AFC132 /* Pods-Hermes Accelerometer StudyUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hermes Accelerometer StudyUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		79BB6D7AF8E69C8EEC49C03E5A9933AD /* Dwifft.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Dwifft.xcconfig; sourceTree = "<group>"; };
-		79D3ED8A1140B8A79CA172B744F71CE8 /* Pods-Hermes Accelerometer Study.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hermes Accelerometer Study.modulemap"; sourceTree = "<group>"; };
-		7B84A3BFDD339A9E5816B41CB0BF4CBF /* Pods-Hermes Accelerometer Study-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hermes Accelerometer Study-umbrella.h"; sourceTree = "<group>"; };
 		7D8B7469829279D3305E8FAA419BABBE /* BinaryReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryReader.swift; path = Sources/CSV/BinaryReader.swift; sourceTree = "<group>"; };
 		7FC23B71C18E0406700CD8956438F14C /* CSV.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CSV.swift-dummy.m"; sourceTree = "<group>"; };
 		82C40A7C717F11F63651D0216EE5186D /* Dwifft.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Dwifft.modulemap; sourceTree = "<group>"; };
-		86B8E11B5E536358011D9C9BAF86EF69 /* Pods-Hermes Accelerometer StudyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hermes Accelerometer StudyTests.release.xcconfig"; sourceTree = "<group>"; };
-		8753964C651C972EE69E2C938580F6D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88601469C29743BEC8299F38F083970A /* Pods_Hermes_Accelerometer_Study.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hermes_Accelerometer_Study.framework; path = "Pods-Hermes Accelerometer Study.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		89BF413D872D3EB5CF3AFDAA10F282D5 /* Pods-Hermes Accelerometer Study.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hermes Accelerometer Study.release.xcconfig"; sourceTree = "<group>"; };
-		8E583FFC1663EE61FEEC5DF5801F3968 /* Pods-Hermes Accelerometer StudyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hermes Accelerometer StudyTests-dummy.m"; sourceTree = "<group>"; };
-		92A28AEC3F9A41A7A3E222F79D549882 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9274EFB85C7B56794EC645D45E1AB2DA /* Pods-Hermes-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hermes-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98BDA86560F51E1EAF74D348A2BEEEED /* Dwifft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Dwifft.framework; path = Dwifft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A225992A7016DDD708ACE30A1568277 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B48B9069C412FF7835BEB8527C6D0F7 /* Dwifft+UIKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dwifft+UIKit.swift"; path = "Dwifft/Dwifft+UIKit.swift"; sourceTree = "<group>"; };
 		9B62336EF96EA8CC9DB75B33926BE739 /* Dwifft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dwifft.swift; path = Dwifft/Dwifft.swift; sourceTree = "<group>"; };
 		A0DEEF2749182EA8E0148B0DC0BC8BF4 /* CSVReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVReader.swift; path = Sources/CSV/CSVReader.swift; sourceTree = "<group>"; };
-		A6AD23762890FA065A92988CAB931538 /* Pods-Hermes Accelerometer Study-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hermes Accelerometer Study-resources.sh"; sourceTree = "<group>"; };
-		ABE8C4FDB07671458C4E374651815268 /* Pods-Hermes Accelerometer StudyUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hermes Accelerometer StudyUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A789D95CDF290431303C49C0EED0BA47 /* CSV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CSV.framework; path = CSV.swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC631DEB24EB28171427DF9523C6AA3C /* CSV.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSV.swift-umbrella.h"; sourceTree = "<group>"; };
+		AFD0F0D08001CDE7AF6CB32834B5C70B /* Pods-Hermes-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hermes-acknowledgements.plist"; sourceTree = "<group>"; };
 		B219C3EDAC79C9B2954BC47791C7FB0E /* Dwifft-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dwifft-umbrella.h"; sourceTree = "<group>"; };
-		B67D8C5ABA6AD7B1C26E7F81F3B5BA45 /* Pods_Hermes_Accelerometer_StudyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hermes_Accelerometer_StudyUITests.framework; path = "Pods-Hermes Accelerometer StudyUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA44985FFA5149330D454B691AD4F7BA /* CSV.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CSV.swift-prefix.pch"; sourceTree = "<group>"; };
-		BCDEAFD11F07E01242E1F1C3138775CD /* Pods-Hermes Accelerometer StudyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hermes Accelerometer StudyUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		BDFC4B9FDE7C20563F7C2A5AEF81EFAA /* Pods-Hermes Accelerometer StudyUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hermes Accelerometer StudyUITests.modulemap"; sourceTree = "<group>"; };
 		C77A41FADEBB5A46B88F05180CA5876A /* Dwifft+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dwifft+AppKit.swift"; path = "Dwifft/Dwifft+AppKit.swift"; sourceTree = "<group>"; };
 		C8CED6D98375DD3AB7EF634037360AB5 /* UnicodeIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnicodeIterator.swift; path = Sources/CSV/UnicodeIterator.swift; sourceTree = "<group>"; };
 		D38B41D863B02920C8ABC5B853C8E2DD /* CSV.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSV.swift.xcconfig; sourceTree = "<group>"; };
 		D7F6BACC4D00BC7059FD5A53C79FD038 /* Endian.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endian.swift; path = Sources/CSV/Endian.swift; sourceTree = "<group>"; };
 		D8AB396B18F6132D4D3D7C28DBFB631E /* CSVWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVWriter.swift; path = Sources/CSV/CSVWriter.swift; sourceTree = "<group>"; };
-		DC5434754112C5823F163ED7FAE4DBC9 /* Pods-Hermes Accelerometer StudyUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hermes Accelerometer StudyUITests-frameworks.sh"; sourceTree = "<group>"; };
-		E33001DD11E7D00BBB391F1A7CE01A63 /* Pods-Hermes Accelerometer StudyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hermes Accelerometer StudyTests-umbrella.h"; sourceTree = "<group>"; };
 		E64A585DD5C2C6BD8D75C08CF3D61A6A /* CSV.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSV.swift.modulemap; sourceTree = "<group>"; };
-		EE5F129BAF6599C5D4F2E026D3130112 /* Pods-Hermes Accelerometer Study-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hermes Accelerometer Study-acknowledgements.markdown"; sourceTree = "<group>"; };
-		F642F89062D5BE2CD3B996B62835A499 /* Pods-Hermes Accelerometer Study-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hermes Accelerometer Study-frameworks.sh"; sourceTree = "<group>"; };
-		F674EB88C6AFAD3C30C431CDF3E2B18F /* Pods-Hermes Accelerometer StudyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hermes Accelerometer StudyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FC5CFF0EEDB33E86A5A188B8C7AFAC2F /* Pods-Hermes Accelerometer Study-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hermes Accelerometer Study-acknowledgements.plist"; sourceTree = "<group>"; };
-		FF3AC2B228188F4F03479C3B7A648940 /* Pods-Hermes Accelerometer StudyUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hermes Accelerometer StudyUITests-umbrella.h"; sourceTree = "<group>"; };
+		E9C2E8665FD021C1FE9555646B9060B9 /* Pods-Hermes.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Hermes.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,11 +98,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B02E2B044950530AC3FE43D045E8AAF9 /* Frameworks */ = {
+		C8AE8A4F64E2B487D0B612DAD04DC870 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				133AF5420B50FE2253A974D83D07D037 /* Foundation.framework in Frameworks */,
+				42AECD334B9E812CFF7997996B302097 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,22 +111,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA3E2B9DEA1BDD4B7CBA071D9AB69791 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F4A07852F6D1D42D5E179FA6F8D79317 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35D3F69B31CE8580080785D338C89785 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD2AC48BA5F13B7DAF7971C68DCCC994 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D84C7F10233BA1F60A5A040301326F02 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,44 +126,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		105C0C309313EA874145CDBC26119F04 /* Products */ = {
+		425046E16398CFC7EB114EB96EC80BEC /* Pods-Hermes */ = {
 			isa = PBXGroup;
 			children = (
-				07205FCE0169D0A9DEA911793D417C4C /* CSV.framework */,
-				1333D12A46DDDB5132773150169A2E61 /* Dwifft.framework */,
-				88601469C29743BEC8299F38F083970A /* Pods_Hermes_Accelerometer_Study.framework */,
-				5AB441A698FE8A1256A903F4171DE854 /* Pods_Hermes_Accelerometer_StudyTests.framework */,
-				B67D8C5ABA6AD7B1C26E7F81F3B5BA45 /* Pods_Hermes_Accelerometer_StudyUITests.framework */,
+				9A225992A7016DDD708ACE30A1568277 /* Info.plist */,
+				E9C2E8665FD021C1FE9555646B9060B9 /* Pods-Hermes.modulemap */,
+				9274EFB85C7B56794EC645D45E1AB2DA /* Pods-Hermes-acknowledgements.markdown */,
+				AFD0F0D08001CDE7AF6CB32834B5C70B /* Pods-Hermes-acknowledgements.plist */,
+				45D693FBDB26847D18DC428A7B5901FE /* Pods-Hermes-dummy.m */,
+				4660F31F164885BD8AF175DF36A80D47 /* Pods-Hermes-frameworks.sh */,
+				134A3DC47CF6D809408C77CB20A297FB /* Pods-Hermes-resources.sh */,
+				3294B691E1435D5EAD3424874FDEA13A /* Pods-Hermes-umbrella.h */,
+				2905045058FD08733584ACE64C937598 /* Pods-Hermes.debug.xcconfig */,
+				5466665B4C6F3DC77F02420DED10492E /* Pods-Hermes.release.xcconfig */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		2C96B8C3E4E41C5F7898393136A6D414 /* Pods-Hermes Accelerometer StudyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8753964C651C972EE69E2C938580F6D2 /* Info.plist */,
-				BDFC4B9FDE7C20563F7C2A5AEF81EFAA /* Pods-Hermes Accelerometer StudyUITests.modulemap */,
-				72130737A4E11DE93837824727AFC132 /* Pods-Hermes Accelerometer StudyUITests-acknowledgements.markdown */,
-				ABE8C4FDB07671458C4E374651815268 /* Pods-Hermes Accelerometer StudyUITests-acknowledgements.plist */,
-				55ED556D499579CA769283E36652FC15 /* Pods-Hermes Accelerometer StudyUITests-dummy.m */,
-				DC5434754112C5823F163ED7FAE4DBC9 /* Pods-Hermes Accelerometer StudyUITests-frameworks.sh */,
-				19D4587AACF2C264282802FD47B92780 /* Pods-Hermes Accelerometer StudyUITests-resources.sh */,
-				FF3AC2B228188F4F03479C3B7A648940 /* Pods-Hermes Accelerometer StudyUITests-umbrella.h */,
-				BCDEAFD11F07E01242E1F1C3138775CD /* Pods-Hermes Accelerometer StudyUITests.debug.xcconfig */,
-				4A854285166E56ED753BEFE9E7848ACC /* Pods-Hermes Accelerometer StudyUITests.release.xcconfig */,
-			);
-			name = "Pods-Hermes Accelerometer StudyUITests";
-			path = "Target Support Files/Pods-Hermes Accelerometer StudyUITests";
-			sourceTree = "<group>";
-		};
-		34ACC4B7E23C07B9201CF091EA176FED /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8499F454FC756EEE70C2601EB9228DD9 /* Pods-Hermes Accelerometer Study */,
-				59931CD4E5571ECBF51B1F23A440031A /* Pods-Hermes Accelerometer StudyTests */,
-				2C96B8C3E4E41C5F7898393136A6D414 /* Pods-Hermes Accelerometer StudyUITests */,
-			);
-			name = "Targets Support Files";
+			name = "Pods-Hermes";
+			path = "Target Support Files/Pods-Hermes";
 			sourceTree = "<group>";
 		};
 		5562FF6E37D126C1D295423131A9A8AA /* Support Files */ = {
@@ -236,24 +156,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CSV.swift";
-			sourceTree = "<group>";
-		};
-		59931CD4E5571ECBF51B1F23A440031A /* Pods-Hermes Accelerometer StudyTests */ = {
-			isa = PBXGroup;
-			children = (
-				92A28AEC3F9A41A7A3E222F79D549882 /* Info.plist */,
-				24D621FFFF619D9F29D0E7406A549760 /* Pods-Hermes Accelerometer StudyTests.modulemap */,
-				2F4EEBE9A21B9C9C82F5F86FC3821854 /* Pods-Hermes Accelerometer StudyTests-acknowledgements.markdown */,
-				5CBC17354A18229C0D6133304DC33C00 /* Pods-Hermes Accelerometer StudyTests-acknowledgements.plist */,
-				8E583FFC1663EE61FEEC5DF5801F3968 /* Pods-Hermes Accelerometer StudyTests-dummy.m */,
-				25D4EE043B0E784DF6BB2A7D3ECD486F /* Pods-Hermes Accelerometer StudyTests-frameworks.sh */,
-				41EEB8DEE72F7CD7F40C3DF833577550 /* Pods-Hermes Accelerometer StudyTests-resources.sh */,
-				E33001DD11E7D00BBB391F1A7CE01A63 /* Pods-Hermes Accelerometer StudyTests-umbrella.h */,
-				F674EB88C6AFAD3C30C431CDF3E2B18F /* Pods-Hermes Accelerometer StudyTests.debug.xcconfig */,
-				86B8E11B5E536358011D9C9BAF86EF69 /* Pods-Hermes Accelerometer StudyTests.release.xcconfig */,
-			);
-			name = "Pods-Hermes Accelerometer StudyTests";
-			path = "Target Support Files/Pods-Hermes Accelerometer StudyTests";
 			sourceTree = "<group>";
 		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
@@ -284,27 +186,17 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				01FF0A9603BA4E632E3C4789F55D31A4 /* Pods */,
-				105C0C309313EA874145CDBC26119F04 /* Products */,
-				34ACC4B7E23C07B9201CF091EA176FED /* Targets Support Files */,
+				D5E3DCD2FA201F8709D9F429E4FB67FC /* Products */,
+				A5A2DFFD8C137927727B49C085B79301 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8499F454FC756EEE70C2601EB9228DD9 /* Pods-Hermes Accelerometer Study */ = {
+		A5A2DFFD8C137927727B49C085B79301 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				0FE2B4AF5BA2F62F6B6333868EA09C17 /* Info.plist */,
-				79D3ED8A1140B8A79CA172B744F71CE8 /* Pods-Hermes Accelerometer Study.modulemap */,
-				EE5F129BAF6599C5D4F2E026D3130112 /* Pods-Hermes Accelerometer Study-acknowledgements.markdown */,
-				FC5CFF0EEDB33E86A5A188B8C7AFAC2F /* Pods-Hermes Accelerometer Study-acknowledgements.plist */,
-				0B69565BC0D274687C0517E0CE301F96 /* Pods-Hermes Accelerometer Study-dummy.m */,
-				F642F89062D5BE2CD3B996B62835A499 /* Pods-Hermes Accelerometer Study-frameworks.sh */,
-				A6AD23762890FA065A92988CAB931538 /* Pods-Hermes Accelerometer Study-resources.sh */,
-				7B84A3BFDD339A9E5816B41CB0BF4CBF /* Pods-Hermes Accelerometer Study-umbrella.h */,
-				6031FE66472049107F16535D94015D9B /* Pods-Hermes Accelerometer Study.debug.xcconfig */,
-				89BF413D872D3EB5CF3AFDAA10F282D5 /* Pods-Hermes Accelerometer Study.release.xcconfig */,
+				425046E16398CFC7EB114EB96EC80BEC /* Pods-Hermes */,
 			);
-			name = "Pods-Hermes Accelerometer Study";
-			path = "Target Support Files/Pods-Hermes Accelerometer Study";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -313,6 +205,16 @@
 				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5E3DCD2FA201F8709D9F429E4FB67FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A789D95CDF290431303C49C0EED0BA47 /* CSV.framework */,
+				98BDA86560F51E1EAF74D348A2BEEEED /* Dwifft.framework */,
+				48431F2C14A227FFFBD7189A051A887A /* Pods_Hermes.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		E702670261DCFB137CB7EE92B51B4CC8 /* CSV.swift */ = {
@@ -348,14 +250,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1E504B3377A0D7E44E27EFEFEBF7CFFE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6B7458DB061A20D9509271EBD8644015 /* Pods-Hermes Accelerometer Study-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3F9A2CFC356754414C2D18A8F07F3320 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,25 +266,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		827386B192078B0ED14C53D0021B7838 /* Headers */ = {
+		83E068D3D616838B9E3FBD3BDC3C716F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DFC7C141B00042F479948DDEA988435 /* Pods-Hermes Accelerometer StudyTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F454A57A0AF55390EC43B0B59965D28D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FB190D384176E68983A99BB9FC74C293 /* Pods-Hermes Accelerometer StudyUITests-umbrella.h in Headers */,
+				5E5DFFD914B54ADB888741D9D3AAD2FF /* Pods-Hermes-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		649863B3AE39D20D46C33F465C8C9059 /* Pods-Hermes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACA94FA9750F014303644F95CCA85881 /* Build configuration list for PBXNativeTarget "Pods-Hermes" */;
+			buildPhases = (
+				CF8723AD03EDA04240B10BD9582C3E41 /* Sources */,
+				C8AE8A4F64E2B487D0B612DAD04DC870 /* Frameworks */,
+				83E068D3D616838B9E3FBD3BDC3C716F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				289124A0B491DA64CE5B62E40C4CF253 /* PBXTargetDependency */,
+				23C29A18161116EC9668608DC83AB857 /* PBXTargetDependency */,
+			);
+			name = "Pods-Hermes";
+			productName = "Pods-Hermes";
+			productReference = 48431F2C14A227FFFBD7189A051A887A /* Pods_Hermes.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		701D4F02FAA85F5DE4F688FC7C082624 /* CSV.swift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 377FE12DC67FA05D7477B8FC587BCBC0 /* Build configuration list for PBXNativeTarget "CSV.swift" */;
@@ -405,43 +310,7 @@
 			);
 			name = CSV.swift;
 			productName = CSV.swift;
-			productReference = 07205FCE0169D0A9DEA911793D417C4C /* CSV.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		8B9B0F9C104852E8C915E14D89CC4454 /* Pods-Hermes Accelerometer StudyUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ECC365DADBC0472A54C0933D62A3A4F0 /* Build configuration list for PBXNativeTarget "Pods-Hermes Accelerometer StudyUITests" */;
-			buildPhases = (
-				54163CFF4122EB7206308424BD6AD5F1 /* Sources */,
-				B02E2B044950530AC3FE43D045E8AAF9 /* Frameworks */,
-				F454A57A0AF55390EC43B0B59965D28D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C9A2CE057959D37B6744F7D99B251A61 /* PBXTargetDependency */,
-			);
-			name = "Pods-Hermes Accelerometer StudyUITests";
-			productName = "Pods-Hermes Accelerometer StudyUITests";
-			productReference = B67D8C5ABA6AD7B1C26E7F81F3B5BA45 /* Pods_Hermes_Accelerometer_StudyUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		B58D0370EC2733ECCFF7B96D8808CB18 /* Pods-Hermes Accelerometer StudyTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4F650C360DD78B97A0C0AA6AEC2568CA /* Build configuration list for PBXNativeTarget "Pods-Hermes Accelerometer StudyTests" */;
-			buildPhases = (
-				C9EF6EA4537A38729A1581996308F5BF /* Sources */,
-				F4A07852F6D1D42D5E179FA6F8D79317 /* Frameworks */,
-				827386B192078B0ED14C53D0021B7838 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				92C076121B11E43F115BBA921CB3C074 /* PBXTargetDependency */,
-			);
-			name = "Pods-Hermes Accelerometer StudyTests";
-			productName = "Pods-Hermes Accelerometer StudyTests";
-			productReference = 5AB441A698FE8A1256A903F4171DE854 /* Pods_Hermes_Accelerometer_StudyTests.framework */;
+			productReference = A789D95CDF290431303C49C0EED0BA47 /* CSV.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B881263F5FBF1212B32FA2AABEFFB1CD /* Dwifft */ = {
@@ -458,26 +327,7 @@
 			);
 			name = Dwifft;
 			productName = Dwifft;
-			productReference = 1333D12A46DDDB5132773150169A2E61 /* Dwifft.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F11F1D5391FAB69DBB4B24052603D496 /* Pods-Hermes Accelerometer Study */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B92F754664BF5D934076A51556C7B4FB /* Build configuration list for PBXNativeTarget "Pods-Hermes Accelerometer Study" */;
-			buildPhases = (
-				AFF4166B9774346A79944DF2F9DD179D /* Sources */,
-				FD2AC48BA5F13B7DAF7971C68DCCC994 /* Frameworks */,
-				1E504B3377A0D7E44E27EFEFEBF7CFFE /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				68AAF5EF6C3995E56306949FCE1B8585 /* PBXTargetDependency */,
-				BB029EED33CD73E69B28748056D92577 /* PBXTargetDependency */,
-			);
-			name = "Pods-Hermes Accelerometer Study";
-			productName = "Pods-Hermes Accelerometer Study";
-			productReference = 88601469C29743BEC8299F38F083970A /* Pods_Hermes_Accelerometer_Study.framework */;
+			productReference = 98BDA86560F51E1EAF74D348A2BEEEED /* Dwifft.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -497,28 +347,18 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 105C0C309313EA874145CDBC26119F04 /* Products */;
+			productRefGroup = D5E3DCD2FA201F8709D9F429E4FB67FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				701D4F02FAA85F5DE4F688FC7C082624 /* CSV.swift */,
 				B881263F5FBF1212B32FA2AABEFFB1CD /* Dwifft */,
-				F11F1D5391FAB69DBB4B24052603D496 /* Pods-Hermes Accelerometer Study */,
-				B58D0370EC2733ECCFF7B96D8808CB18 /* Pods-Hermes Accelerometer StudyTests */,
-				8B9B0F9C104852E8C915E14D89CC4454 /* Pods-Hermes Accelerometer StudyUITests */,
+				649863B3AE39D20D46C33F465C8C9059 /* Pods-Hermes */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		54163CFF4122EB7206308424BD6AD5F1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				43D4525DC25C274A348579DEAF6EA620 /* Pods-Hermes Accelerometer StudyUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		83A5511E4268E6FD6601C87C640E68D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -529,14 +369,6 @@
 				28434066CFF5F0C3BDC870444177F0F1 /* Dwifft-dummy.m in Sources */,
 				4EB3C7E861E1843C259CB3E2E855D384 /* Dwifft.swift in Sources */,
 				B021C3B950A41D10C91FD0FE0161CD98 /* SectionedValues.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AFF4166B9774346A79944DF2F9DD179D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EED85222A2A1A820B09AA717E449EE5F /* Pods-Hermes Accelerometer Study-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,82 +387,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9EF6EA4537A38729A1581996308F5BF /* Sources */ = {
+		CF8723AD03EDA04240B10BD9582C3E41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB8A2A92A631D9F6DF8A2563483B81CB /* Pods-Hermes Accelerometer StudyTests-dummy.m in Sources */,
+				6FA90548BDAD962E51409D706FEB46C0 /* Pods-Hermes-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		68AAF5EF6C3995E56306949FCE1B8585 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CSV.swift;
-			target = 701D4F02FAA85F5DE4F688FC7C082624 /* CSV.swift */;
-			targetProxy = 829E45C16CF7538B09D201315354F40B /* PBXContainerItemProxy */;
-		};
-		92C076121B11E43F115BBA921CB3C074 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-Hermes Accelerometer Study";
-			target = F11F1D5391FAB69DBB4B24052603D496 /* Pods-Hermes Accelerometer Study */;
-			targetProxy = 9027FD7B728FAB1092F79F098FA3B763 /* PBXContainerItemProxy */;
-		};
-		BB029EED33CD73E69B28748056D92577 /* PBXTargetDependency */ = {
+		23C29A18161116EC9668608DC83AB857 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Dwifft;
 			target = B881263F5FBF1212B32FA2AABEFFB1CD /* Dwifft */;
-			targetProxy = 61AABBBD85AC503A5B112E2027F9E240 /* PBXContainerItemProxy */;
+			targetProxy = F6E6AB6286645E6C6B8E1D5EC2FBB987 /* PBXContainerItemProxy */;
 		};
-		C9A2CE057959D37B6744F7D99B251A61 /* PBXTargetDependency */ = {
+		289124A0B491DA64CE5B62E40C4CF253 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Hermes Accelerometer Study";
-			target = F11F1D5391FAB69DBB4B24052603D496 /* Pods-Hermes Accelerometer Study */;
-			targetProxy = 6D2E0EAF5A20D9E86B27850A69FAE3C0 /* PBXContainerItemProxy */;
+			name = CSV.swift;
+			target = 701D4F02FAA85F5DE4F688FC7C082624 /* CSV.swift */;
+			targetProxy = AEF1E9C143D066312ADE2E22C7298C66 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0B820AF57959463B3730E8CFA988BB8F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F674EB88C6AFAD3C30C431CDF3E2B18F /* Pods-Hermes Accelerometer StudyTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Hermes Accelerometer StudyTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hermes Accelerometer StudyTests/Pods-Hermes Accelerometer StudyTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		0E12B7268EF0862DFEEB8B6B0BD7C9F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -694,9 +476,9 @@
 			};
 			name = Debug;
 		};
-		24CDEE3F2BB658D24B05752C41076CA3 /* Release */ = {
+		13549B722D533A67981473C5554A2C86 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A854285166E56ED753BEFE9E7848ACC /* Pods-Hermes Accelerometer StudyUITests.release.xcconfig */;
+			baseConfigurationReference = 5466665B4C6F3DC77F02420DED10492E /* Pods-Hermes.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -709,7 +491,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Hermes Accelerometer StudyUITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hermes/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -718,85 +500,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hermes Accelerometer StudyUITests/Pods-Hermes Accelerometer StudyUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9E0C7A18B3E046369E2AC5274FE519C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86B8E11B5E536358011D9C9BAF86EF69 /* Pods-Hermes Accelerometer StudyTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Hermes Accelerometer StudyTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hermes Accelerometer StudyTests/Pods-Hermes Accelerometer StudyTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9E72C2A7905A0FA569F776BFBA311D6E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89BF413D872D3EB5CF3AFDAA10F282D5 /* Pods-Hermes Accelerometer Study.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Hermes Accelerometer Study/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hermes Accelerometer Study/Pods-Hermes Accelerometer Study.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Hermes/Pods-Hermes.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -885,6 +589,46 @@
 			};
 			name = Release;
 		};
+		C4F5F93D3ABA8D08CBD4A29FD7CED25F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2905045058FD08733584ACE64C937598 /* Pods-Hermes.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hermes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hermes/Pods-Hermes.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		CD8324D57CD462761E218EEA4EA91EC7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -942,84 +686,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		CEA69CFD791BEF7489F34FF75B628996 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCDEAFD11F07E01242E1F1C3138775CD /* Pods-Hermes Accelerometer StudyUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Hermes Accelerometer StudyUITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hermes Accelerometer StudyUITests/Pods-Hermes Accelerometer StudyUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D232AEA971CE15B8A1E37462D0BBF894 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6031FE66472049107F16535D94015D9B /* Pods-Hermes Accelerometer Study.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Hermes Accelerometer Study/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hermes Accelerometer Study/Pods-Hermes Accelerometer Study.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		D5C3EA927B700EA683567959DA07D922 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1124,29 +790,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F650C360DD78B97A0C0AA6AEC2568CA /* Build configuration list for PBXNativeTarget "Pods-Hermes Accelerometer StudyTests" */ = {
+		ACA94FA9750F014303644F95CCA85881 /* Build configuration list for PBXNativeTarget "Pods-Hermes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B820AF57959463B3730E8CFA988BB8F /* Debug */,
-				9E0C7A18B3E046369E2AC5274FE519C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B92F754664BF5D934076A51556C7B4FB /* Build configuration list for PBXNativeTarget "Pods-Hermes Accelerometer Study" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D232AEA971CE15B8A1E37462D0BBF894 /* Debug */,
-				9E72C2A7905A0FA569F776BFBA311D6E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ECC365DADBC0472A54C0933D62A3A4F0 /* Build configuration list for PBXNativeTarget "Pods-Hermes Accelerometer StudyUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CEA69CFD791BEF7489F34FF75B628996 /* Debug */,
-				24CDEE3F2BB658D24B05752C41076CA3 /* Release */,
+				C4F5F93D3ABA8D08CBD4A29FD7CED25F /* Debug */,
+				13549B722D533A67981473C5554A2C86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

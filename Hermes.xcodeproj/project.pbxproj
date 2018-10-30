@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		274B804D2178EE2600BD1A57 /* PrimarySplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B804C2178EE2600BD1A57 /* PrimarySplitViewController.swift */; };
+		274B80512179087C00BD1A57 /* NSManagedObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B80502179087C00BD1A57 /* NSManagedObjectExtensions.swift */; };
+		274B8053217908B000BD1A57 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B8052217908B000BD1A57 /* DateExtensions.swift */; };
+		274B8055217908F100BD1A57 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B8054217908F100BD1A57 /* IntExtensions.swift */; };
+		274B80572179090500BD1A57 /* CMMotionActivityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B80562179090500BD1A57 /* CMMotionActivityExtensions.swift */; };
+		274B805A217909E800BD1A57 /* SessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B8059217909E800BD1A57 /* SessionsViewController.swift */; };
+		274B805C217909F400BD1A57 /* SessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B805B217909F400BD1A57 /* SessionViewController.swift */; };
+		274B805E21790C1000BD1A57 /* AddSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B805D21790C1000BD1A57 /* AddSessionViewController.swift */; };
+		274B80622179165200BD1A57 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274B80612179165200BD1A57 /* StringExtensions.swift */; };
+		2761E8AA217F928D004B16F6 /* HMSLocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8A9217F928D004B16F6 /* HMSLocationExtensions.swift */; };
+		2761E8AC217F92A9004B16F6 /* HMSAccelerometerDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8AB217F92A9004B16F6 /* HMSAccelerometerDataExtensions.swift */; };
+		2761E8AE217F92F7004B16F6 /* HMSMotionActivityExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8AD217F92F7004B16F6 /* HMSMotionActivityExtensions.swift */; };
+		2761E8B0217F9318004B16F6 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8AF217F9318004B16F6 /* DoubleExtensions.swift */; };
+		2761E8B3217F936D004B16F6 /* UInt32Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8B2217F936D004B16F6 /* UInt32Extensions.swift */; };
+		2761E8B7217F9482004B16F6 /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8B6217F9482004B16F6 /* UIApplicationExtensions.swift */; };
+		2761E8B9217F94BA004B16F6 /* UIViewControllerCoreDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8B8217F94BA004B16F6 /* UIViewControllerCoreDataExtensions.swift */; };
+		2761E8BF217F957D004B16F6 /* DateFormatterConvertibleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8BE217F957D004B16F6 /* DateFormatterConvertibleExtensions.swift */; };
+		2761E8C2217F95C8004B16F6 /* UserDefaultsKeyConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8C1217F95C8004B16F6 /* UserDefaultsKeyConvertible.swift */; };
+		2761E8C4217F95E9004B16F6 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8C3217F95E9004B16F6 /* UserDefaults.swift */; };
+		2761E8C6217F9613004B16F6 /* FormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8C5217F9613004B16F6 /* FormatterExtensions.swift */; };
+		2761E8C8217F96CA004B16F6 /* DateFormatConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8C7217F96CA004B16F6 /* DateFormatConvertible.swift */; };
+		2761E8CB217F9721004B16F6 /* DateConvertibleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8CA217F9721004B16F6 /* DateConvertibleExtensions.swift */; };
+		2761E8CD217F9739004B16F6 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8CC217F9739004B16F6 /* DateFormat.swift */; };
+		2761E8CF217FBFCB004B16F6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8CE217FBFCB004B16F6 /* SessionManager.swift */; };
+		2761E8D12180CA06004B16F6 /* BluetoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8D02180CA06004B16F6 /* BluetoothViewController.swift */; };
+		2761E8D6218220BB004B16F6 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8D5218220BB004B16F6 /* BluetoothManager.swift */; };
+		2761E8DA21825C38004B16F6 /* BluetoothDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2761E8D921825C38004B16F6 /* BluetoothDetailViewController.swift */; };
+		27DD5E3F217514C800F56FFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E3E217514C800F56FFE /* AppDelegate.swift */; };
+		27DD5E44217514C800F56FFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DD5E42217514C800F56FFE /* Main.storyboard */; };
+		27DD5E47217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E45217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld */; };
+		27DD5E49217514CD00F56FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27DD5E48217514CD00F56FFE /* Assets.xcassets */; };
+		27DD5E4C217514CD00F56FFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27DD5E4A217514CD00F56FFE /* LaunchScreen.storyboard */; };
+		27DD5E7021764D5700F56FFE /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E6F21764D5700F56FFE /* UIViewControllerExtensions.swift */; };
+		27DD5E7221764D6F00F56FFE /* UIAlertControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E7121764D6F00F56FFE /* UIAlertControllerExtensions.swift */; };
+		27DD5E762176561A00F56FFE /* UserDefaultsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DD5E752176561A00F56FFE /* UserDefaultsExtensions.swift */; };
+		E2D8D5BD9195627B529CC2B9 /* Pods_Hermes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D884898457D8838C61CDB9 /* Pods_Hermes.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		274B804C2178EE2600BD1A57 /* PrimarySplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimarySplitViewController.swift; sourceTree = "<group>"; };
+		274B80502179087C00BD1A57 /* NSManagedObjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectExtensions.swift; sourceTree = "<group>"; };
+		274B8052217908B000BD1A57 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		274B8054217908F100BD1A57 /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		274B80562179090500BD1A57 /* CMMotionActivityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMMotionActivityExtensions.swift; sourceTree = "<group>"; };
+		274B8059217909E800BD1A57 /* SessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsViewController.swift; sourceTree = "<group>"; };
+		274B805B217909F400BD1A57 /* SessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewController.swift; sourceTree = "<group>"; };
+		274B805D21790C1000BD1A57 /* AddSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSessionViewController.swift; sourceTree = "<group>"; };
+		274B80612179165200BD1A57 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		2761E8A9217F928D004B16F6 /* HMSLocationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMSLocationExtensions.swift; sourceTree = "<group>"; };
+		2761E8AB217F92A9004B16F6 /* HMSAccelerometerDataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMSAccelerometerDataExtensions.swift; sourceTree = "<group>"; };
+		2761E8AD217F92F7004B16F6 /* HMSMotionActivityExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMSMotionActivityExtensions.swift; sourceTree = "<group>"; };
+		2761E8AF217F9318004B16F6 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
+		2761E8B2217F936D004B16F6 /* UInt32Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UInt32Extensions.swift; sourceTree = "<group>"; };
+		2761E8B6217F9482004B16F6 /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
+		2761E8B8217F94BA004B16F6 /* UIViewControllerCoreDataExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerCoreDataExtensions.swift; sourceTree = "<group>"; };
+		2761E8BE217F957D004B16F6 /* DateFormatterConvertibleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterConvertibleExtensions.swift; sourceTree = "<group>"; };
+		2761E8C1217F95C8004B16F6 /* UserDefaultsKeyConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeyConvertible.swift; sourceTree = "<group>"; };
+		2761E8C3217F95E9004B16F6 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		2761E8C5217F9613004B16F6 /* FormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterExtensions.swift; sourceTree = "<group>"; };
+		2761E8C7217F96CA004B16F6 /* DateFormatConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatConvertible.swift; sourceTree = "<group>"; };
+		2761E8CA217F9721004B16F6 /* DateConvertibleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateConvertibleExtensions.swift; sourceTree = "<group>"; };
+		2761E8CC217F9739004B16F6 /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
+		2761E8CE217FBFCB004B16F6 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		2761E8D02180CA06004B16F6 /* BluetoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewController.swift; sourceTree = "<group>"; };
+		2761E8D5218220BB004B16F6 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		2761E8D921825C38004B16F6 /* BluetoothDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDetailViewController.swift; sourceTree = "<group>"; };
+		27DD5E3B217514C800F56FFE /* Hermes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hermes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27DD5E3E217514C800F56FFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27DD5E43217514C800F56FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27DD5E46217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hermes_Accelerometer_Study.xcdatamodel; sourceTree = "<group>"; };
+		27DD5E48217514CD00F56FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27DD5E4B217514CD00F56FFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27DD5E4D217514CD00F56FFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27DD5E6F21764D5700F56FFE /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		27DD5E7121764D6F00F56FFE /* UIAlertControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertControllerExtensions.swift; sourceTree = "<group>"; };
+		27DD5E752176561A00F56FFE /* UserDefaultsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtensions.swift; sourceTree = "<group>"; };
+		64D884898457D8838C61CDB9 /* Pods_Hermes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hermes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92CF8F550213F836A6D1E410 /* Pods-Hermes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hermes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hermes/Pods-Hermes.debug.xcconfig"; sourceTree = "<group>"; };
+		9BEC92308E1A727745637B36 /* Pods-Hermes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hermes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hermes/Pods-Hermes.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27DD5E38217514C800F56FFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2D8D5BD9195627B529CC2B9 /* Pods_Hermes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27465C9D9F874594C2837506 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92CF8F550213F836A6D1E410 /* Pods-Hermes.debug.xcconfig */,
+				9BEC92308E1A727745637B36 /* Pods-Hermes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		274B80582179094000BD1A57 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				27DD5E7121764D6F00F56FFE /* UIAlertControllerExtensions.swift */,
+				27DD5E6F21764D5700F56FFE /* UIViewControllerExtensions.swift */,
+				2761E8B6217F9482004B16F6 /* UIApplicationExtensions.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		2761E8B1217F9320004B16F6 /* Core Data Model Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2761E8A9217F928D004B16F6 /* HMSLocationExtensions.swift */,
+				2761E8AB217F92A9004B16F6 /* HMSAccelerometerDataExtensions.swift */,
+				2761E8AD217F92F7004B16F6 /* HMSMotionActivityExtensions.swift */,
+			);
+			path = "Core Data Model Extensions";
+			sourceTree = "<group>";
+		};
+		2761E8B4217F939D004B16F6 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				2761E8AF217F9318004B16F6 /* DoubleExtensions.swift */,
+				274B8054217908F100BD1A57 /* IntExtensions.swift */,
+				274B80612179165200BD1A57 /* StringExtensions.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		2761E8B5217F93B8004B16F6 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				2761E8C9217F96FB004B16F6 /* Date */,
+				274B8052217908B000BD1A57 /* DateExtensions.swift */,
+				2761E8C5217F9613004B16F6 /* FormatterExtensions.swift */,
+				2761E8B2217F936D004B16F6 /* UInt32Extensions.swift */,
+				2761E8C0217F95AE004B16F6 /* UserDefaults */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		2761E8BA217F94D5004B16F6 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				274B80502179087C00BD1A57 /* NSManagedObjectExtensions.swift */,
+				2761E8B8217F94BA004B16F6 /* UIViewControllerCoreDataExtensions.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		2761E8BB217F94E6004B16F6 /* Core Motion */ = {
+			isa = PBXGroup;
+			children = (
+				274B80562179090500BD1A57 /* CMMotionActivityExtensions.swift */,
+			);
+			path = "Core Motion";
+			sourceTree = "<group>";
+		};
+		2761E8BC217F94FD004B16F6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2761E8BA217F94D5004B16F6 /* Core Data */,
+				2761E8BB217F94E6004B16F6 /* Core Motion */,
+				2761E8B5217F93B8004B16F6 /* Foundation */,
+				2761E8B4217F939D004B16F6 /* Swift */,
+				274B80582179094000BD1A57 /* UIKit */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2761E8BD217F9534004B16F6 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				274B804C2178EE2600BD1A57 /* PrimarySplitViewController.swift */,
+				2761E8C3217F95E9004B16F6 /* UserDefaults.swift */,
+				2761E8CC217F9739004B16F6 /* DateFormat.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		2761E8C0217F95AE004B16F6 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				27DD5E752176561A00F56FFE /* UserDefaultsExtensions.swift */,
+				2761E8C1217F95C8004B16F6 /* UserDefaultsKeyConvertible.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		2761E8C9217F96FB004B16F6 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				2761E8CA217F9721004B16F6 /* DateConvertibleExtensions.swift */,
+				2761E8C7217F96CA004B16F6 /* DateFormatConvertible.swift */,
+				2761E8BE217F957D004B16F6 /* DateFormatterConvertibleExtensions.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		2761E8D22180F87D004B16F6 /* Location and Activity Session */ = {
+			isa = PBXGroup;
+			children = (
+				274B8059217909E800BD1A57 /* SessionsViewController.swift */,
+				274B805B217909F400BD1A57 /* SessionViewController.swift */,
+				274B805D21790C1000BD1A57 /* AddSessionViewController.swift */,
+			);
+			path = "Location and Activity Session";
+			sourceTree = "<group>";
+		};
+		2761E8D32180F8A2004B16F6 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				2761E8D02180CA06004B16F6 /* BluetoothViewController.swift */,
+				2761E8D921825C38004B16F6 /* BluetoothDetailViewController.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		2761E8D42180F8AC004B16F6 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				2761E8D22180F87D004B16F6 /* Location and Activity Session */,
+				2761E8D32180F8A2004B16F6 /* Bluetooth */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		2761E8D721822185004B16F6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2761E8CE217FBFCB004B16F6 /* SessionManager.swift */,
+				2761E8D5218220BB004B16F6 /* BluetoothManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2761E8D8218221B2004B16F6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2761E8B1217F9320004B16F6 /* Core Data Model Extensions */,
+				2761E8BC217F94FD004B16F6 /* Extensions */,
+				2761E8D721822185004B16F6 /* Managers */,
+				2761E8BD217F9534004B16F6 /* Utility */,
+				2761E8D42180F8AC004B16F6 /* VCs */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		27DD5E32217514C800F56FFE = {
+			isa = PBXGroup;
+			children = (
+				27DD5E3D217514C800F56FFE /* Hermes */,
+				27DD5E3C217514C800F56FFE /* Products */,
+				27465C9D9F874594C2837506 /* Pods */,
+				EEF5A0595A7743FA37AAF9A9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		27DD5E3C217514C800F56FFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27DD5E3B217514C800F56FFE /* Hermes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27DD5E3D217514C800F56FFE /* Hermes */ = {
+			isa = PBXGroup;
+			children = (
+				27DD5E3E217514C800F56FFE /* AppDelegate.swift */,
+				27DD5E42217514C800F56FFE /* Main.storyboard */,
+				27DD5E48217514CD00F56FFE /* Assets.xcassets */,
+				27DD5E4A217514CD00F56FFE /* LaunchScreen.storyboard */,
+				2761E8D8218221B2004B16F6 /* Sources */,
+				27DD5E4D217514CD00F56FFE /* Info.plist */,
+				27DD5E45217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld */,
+			);
+			path = Hermes;
+			sourceTree = "<group>";
+		};
+		EEF5A0595A7743FA37AAF9A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64D884898457D8838C61CDB9 /* Pods_Hermes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27DD5E3A217514C800F56FFE /* Hermes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27DD5E66217514CD00F56FFE /* Build configuration list for PBXNativeTarget "Hermes" */;
+			buildPhases = (
+				D457435303C8D5D8D41708F1 /* [CP] Check Pods Manifest.lock */,
+				27DD5E37217514C800F56FFE /* Sources */,
+				27DD5E38217514C800F56FFE /* Frameworks */,
+				27DD5E39217514C800F56FFE /* Resources */,
+				E7ABFA1011DE9EFD4F4859F2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hermes;
+			productName = "Hermes Accelerometer Study";
+			productReference = 27DD5E3B217514C800F56FFE /* Hermes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27DD5E33217514C800F56FFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Paul Jones";
+				TargetAttributes = {
+					27DD5E3A217514C800F56FFE = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 27DD5E36217514C800F56FFE /* Build configuration list for PBXProject "Hermes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27DD5E32217514C800F56FFE;
+			productRefGroup = 27DD5E3C217514C800F56FFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27DD5E3A217514C800F56FFE /* Hermes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27DD5E39217514C800F56FFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27DD5E4C217514CD00F56FFE /* LaunchScreen.storyboard in Resources */,
+				27DD5E49217514CD00F56FFE /* Assets.xcassets in Resources */,
+				27DD5E44217514C800F56FFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D457435303C8D5D8D41708F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hermes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7ABFA1011DE9EFD4F4859F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hermes/Pods-Hermes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CSV.swift/CSV.framework",
+				"${BUILT_PRODUCTS_DIR}/Dwifft/Dwifft.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CSV.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dwifft.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hermes/Pods-Hermes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27DD5E37217514C800F56FFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2761E8C8217F96CA004B16F6 /* DateFormatConvertible.swift in Sources */,
+				274B80512179087C00BD1A57 /* NSManagedObjectExtensions.swift in Sources */,
+				274B805A217909E800BD1A57 /* SessionsViewController.swift in Sources */,
+				274B80622179165200BD1A57 /* StringExtensions.swift in Sources */,
+				274B8053217908B000BD1A57 /* DateExtensions.swift in Sources */,
+				2761E8CF217FBFCB004B16F6 /* SessionManager.swift in Sources */,
+				2761E8C2217F95C8004B16F6 /* UserDefaultsKeyConvertible.swift in Sources */,
+				2761E8CD217F9739004B16F6 /* DateFormat.swift in Sources */,
+				2761E8B0217F9318004B16F6 /* DoubleExtensions.swift in Sources */,
+				274B805E21790C1000BD1A57 /* AddSessionViewController.swift in Sources */,
+				2761E8CB217F9721004B16F6 /* DateConvertibleExtensions.swift in Sources */,
+				2761E8B7217F9482004B16F6 /* UIApplicationExtensions.swift in Sources */,
+				27DD5E7021764D5700F56FFE /* UIViewControllerExtensions.swift in Sources */,
+				27DD5E7221764D6F00F56FFE /* UIAlertControllerExtensions.swift in Sources */,
+				2761E8AA217F928D004B16F6 /* HMSLocationExtensions.swift in Sources */,
+				2761E8AC217F92A9004B16F6 /* HMSAccelerometerDataExtensions.swift in Sources */,
+				2761E8B9217F94BA004B16F6 /* UIViewControllerCoreDataExtensions.swift in Sources */,
+				274B8055217908F100BD1A57 /* IntExtensions.swift in Sources */,
+				274B804D2178EE2600BD1A57 /* PrimarySplitViewController.swift in Sources */,
+				2761E8C6217F9613004B16F6 /* FormatterExtensions.swift in Sources */,
+				27DD5E47217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld in Sources */,
+				274B805C217909F400BD1A57 /* SessionViewController.swift in Sources */,
+				2761E8DA21825C38004B16F6 /* BluetoothDetailViewController.swift in Sources */,
+				2761E8BF217F957D004B16F6 /* DateFormatterConvertibleExtensions.swift in Sources */,
+				2761E8B3217F936D004B16F6 /* UInt32Extensions.swift in Sources */,
+				274B80572179090500BD1A57 /* CMMotionActivityExtensions.swift in Sources */,
+				2761E8D6218220BB004B16F6 /* BluetoothManager.swift in Sources */,
+				2761E8C4217F95E9004B16F6 /* UserDefaults.swift in Sources */,
+				27DD5E762176561A00F56FFE /* UserDefaultsExtensions.swift in Sources */,
+				2761E8D12180CA06004B16F6 /* BluetoothViewController.swift in Sources */,
+				2761E8AE217F92F7004B16F6 /* HMSMotionActivityExtensions.swift in Sources */,
+				27DD5E3F217514C800F56FFE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		27DD5E42217514C800F56FFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27DD5E43217514C800F56FFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27DD5E4A217514CD00F56FFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27DD5E4B217514CD00F56FFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27DD5E64217514CD00F56FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27DD5E65217514CD00F56FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27DD5E67217514CD00F56FFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92CF8F550213F836A6D1E410 /* Pods-Hermes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZZ7W4SB26;
+				INFOPLIST_FILE = Hermes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = prolificinteractive.Hermes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		27DD5E68217514CD00F56FFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BEC92308E1A727745637B36 /* Pods-Hermes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZZ7W4SB26;
+				INFOPLIST_FILE = Hermes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = prolificinteractive.Hermes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27DD5E36217514C800F56FFE /* Build configuration list for PBXProject "Hermes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DD5E64217514CD00F56FFE /* Debug */,
+				27DD5E65217514CD00F56FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27DD5E66217514CD00F56FFE /* Build configuration list for PBXNativeTarget "Hermes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27DD5E67217514CD00F56FFE /* Debug */,
+				27DD5E68217514CD00F56FFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		27DD5E45217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				27DD5E46217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodel */,
+			);
+			currentVersion = 27DD5E46217514C800F56FFE /* Hermes_Accelerometer_Study.xcdatamodel */;
+			path = Hermes_Accelerometer_Study.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 27DD5E33217514C800F56FFE /* Project object */;
+}

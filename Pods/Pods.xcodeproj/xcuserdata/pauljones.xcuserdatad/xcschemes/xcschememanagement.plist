@@ -14,17 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Hermes Accelerometer Study.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Hermes Accelerometer StudyTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-Hermes Accelerometer StudyUITests.xcscheme</key>
+		<key>Pods-Hermes.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
