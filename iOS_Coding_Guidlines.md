@@ -313,6 +313,40 @@ allViews.remove(cancelButton)
 - Otherwise, if the first argument forms part of a grammatical phrase, omit its label, appending any preceding words to the base name, e.g. x.addSubview(y)
 - Label all other arguments.
 
+Architecture
+------------
+
+-   Use `MVVM*`
+    -   **Model**: stores data, parsed from JSON, comes from the web, plain-old struct or class, `Codable`.
+    -   **View Model**
+        -   A protocol with an implementation
+        -   Get data from model
+        -   Send data to model
+        -   Inform view of model changes
+        -   Provide interface for views ("in a way that makes sense to a view")
+        -   Business logic
+        -   Communicate state to Coordinator.
+
+        ```swift
+        protocol AuthenticateViewModel {
+          var model: AuthentcateModel? { get set }
+          var viewDelegate: AuthenticateViewModelViewDelegate? { get set }
+
+          var email: String? { get set }
+          var password: String? { get set }
+
+          func submit()
+        }
+
+        protocol AuthenticateViewModelViewDelegate: class {
+          func canSubmitStatusDidChange(viewModel: AuthenticateViewModel, status: Bool)
+          func errorMessageDidChange(viewModel: AuthenticateViewModel, message: String)
+        }
+
+        ```
+
+    -   **View**: Both `UIView` and `UIViewController`, accepts user input, view model changes the appearance and behavior of these classes.
+
 Standards
 ---------
 
