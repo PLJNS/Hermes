@@ -316,36 +316,79 @@ allViews.remove(cancelButton)
 Architecture
 ------------
 
+MVVM, roughly, has the following constraints:
+
+-   Models don't talk to anybody (same as MVC).
+-   View models only talk to models.
+-   View controllers can't talk to models directly; they only interact with view models and views.
+-   Views only talk to the view controllers, notifying them of interaction events (same as MVC).
+
+And that's pretty much it. It's not that different from MVC – the key differences are:
+
+-   There's a new "view model" class.
+-   The view controller no longer has access to the model.
+
 -   Use `MVVM*`
-    -   **Model**: stores data, parsed from JSON, comes from the web, plain-old struct or class, `Codable`.
+    -   **Model**: 
+        -   stores data
+        -   Probably parsed from JSON or comes from a database or the web,
+        -   Plain-old struct or class
+        -   `Codable`
+        -   "Dumb"
+        - Ex:
+        ```swift
+        struct Cat: Codable {
+            let id: String
+            let url: String
+        }
+        ```
     -   **View Model**
-        -   A protocol with an implementation
         -   Get data from model
         -   Send data to model
-        -   Inform view of model changes
-        -   Provide interface for views ("in a way that makes sense to a view")
+        -   Inform view of model changes through delegation
+        -   Provide interface for views ("in a way that makes sense to a view") and hides the model from the view.
         -   Business logic
-        -   Communicate state to Coordinator.
-
+        -   Hits the network
+        -   Is initialized with its dependancies
+        -   Ex:
         ```swift
-        protocol AuthenticateViewModel {
-          var model: AuthentcateModel? { get set }
-          var viewDelegate: AuthenticateViewModelViewDelegate? { get set }
-
-          var email: String? { get set }
-          var password: String? { get set }
-
-          func submit()
+        protocol CatViewModelDelegate: class {
+            func catViewModelDidUpdate(_ viewModel: CatViewModel)
         }
-
-        protocol AuthenticateViewModelViewDelegate: class {
-          func canSubmitStatusDidChange(viewModel: AuthenticateViewModel, status: Bool)
-          func errorMessageDidChange(viewModel: AuthenticateViewModel, message: String)
+        protocol CatViewModel: class {
+            var delegate: CatViewModelDelegate?
+            var count: Int { get }
+            func cat(at index: Int) -> Cat
+            func update()
         }
-
         ```
+    -   **View**: 
+        -   `UIView`
+            -   Accepts user input and tells `UIViewController` through delegation.
+            -   "Dumb"
+        -   `UIViewController`
+            -   Builds, owns, and maintains `UIViews`
+            -   Has a reference to a `ViewModel` through a protocol.
+            -   Is informed of updates in `ViewModel` through delegation or closures.
+            -   Can see models, adapts them for `UIViews`
+        ```swift
+        class CatTableViewCell: UITableViewCell { /***/ }
+        class CatTableViewController: UITableViewController {
+          var viewModel: CatViewModel
 
-    -   **View**: Both `UIView` and `UIViewController`, accepts user input, view model changes the appearance and behavior of these classes.
+          override func viewDidLoad() {
+            super.viewDidLoad()
+            viewModel.update()
+          }
+
+          /// cell for row, etc.
+        }
+        extension CatTableViewController: CatViewModelDelegate {
+          func catViewModelDidUpdate(_ viewModel: CatViewModel) {
+            tableView.reloadData()
+          }
+        }
+        ```
 
 Standards
 ---------
@@ -968,4 +1011,7 @@ Sources
 - The Apple Swift [API design guidelines](https://swift.org/documentation/api-design-guidelines/)
 - NetNewsWire's [Coding Guidelines](https://github.com/brentsimmons/NetNewsWire/blob/1b0804e10cae4cb4b0ce6399e0f09179572ca73e/Technotes/CodingGuidelines.md)
 - Prolific's [Swift Style Guide](https://github.com/prolificinteractive/swift-style-guide)
+- https://www.youtube.com/watch?v=9VojuJpUuE8
+- http://artsy.github.io/blog/2015/09/24/mvvm-in-swift/
+- https://github.com/tattn/ios-architectures/tree/master/ios-architectures/MVVM
 
