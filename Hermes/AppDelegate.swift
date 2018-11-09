@@ -11,6 +11,7 @@ import CoreData
 import CoreLocation
 import CoreMotion
 import CoreBluetooth
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,8 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var sessionManager = SessionManager()
     var bluetoothManager: BluetoothManager?
     var session: HMSSession?
+    
+    let locationManager = CLLocationManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        locationManager.delegate = self
+        locationManager.requestAlwaysAuthorization()
+        
         if let _ = launchOptions?[.location] {
             sessionManager.startMonitoringSignificantLocationChanges()
             session = HMSSession.insertNewObject(into: viewManagedObjectContext)
@@ -41,6 +47,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
                 bluetoothManager = BluetoothManager(delegate: self, restoreIdentifier: BluetoothManager.defaultRestoreIdentifier)
             }
+        }
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
+            UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
         }
         
         return true
@@ -64,6 +74,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         saveContext()
+    }
+    
+    func handleEvent(for region: CLRegion!, enter: Bool) {
+        if UIApplication.shared.applicationState == .active {
+            //show alert
+            guard let message = note(fromRegion: region.identifier) else { return }
+            window?.rootViewController?.showAlert(withTitle: nil, message: message)
+//            print("\(note(fromRegion: region.identifier) ?? ""), Enter: \(enter)")
+        } else {
+            //present local notification
+            let notification = UNMutableNotificationContent()
+            notification.body = note(fromRegion: region.identifier) ?? "Geofence triggered!"
+            notification.sound = UNNotificationSound.default
+            let request = UNNotificationRequest.init(identifier: "Trigger", content: notification, trigger: nil)
+            let center = UNUserNotificationCenter.current()
+            center.add(request)
+//            print("\(note(fromRegion: region.identifier) ?? ""), Enter: \(enter)")
+        }
+    }
+    
+    func note(fromRegion identifier: String) -> String? {
+        let savedItems = UserDefaults.standard.array(forKey: PreferencesKeys.savedItems) as? [NSData]
+        let geotifications = savedItems?.map {
+            NSKeyedUnarchiver.unarchiveObject(with: $0 as Data) as? Geotification
+        }
+        let index = geotifications?.index { $0?.identifier == identifier }
+        return index != nil ? geotifications?[index!]?.note : nil
     }
 
     // MARK: - Core Data stack
@@ -129,6 +166,22 @@ extension AppDelegate: SessionManagerDelegate {
             hmsLocation.configure(with: location)
             session.addToEntries(hmsLocation)            
             saveContext()
+        }
+    }
+    
+}
+
+extension AppDelegate: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        if region is CLCircularRegion {
+            handleEvent(for: region, enter: true)
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+        if region is CLCircularRegion {
+            handleEvent(for: region, enter: false)
         }
     }
     

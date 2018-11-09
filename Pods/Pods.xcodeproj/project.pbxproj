@@ -7,43 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0EF425D49A4B33E2F680F5E3613B5B75 /* CSV.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC631DEB24EB28171427DF9523C6AA3C /* CSV.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D865635B49CD023BA6445CBB603D777 /* Dwifft+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B48B9069C412FF7835BEB8527C6D0F7 /* Dwifft+UIKit.swift */; };
-		28434066CFF5F0C3BDC870444177F0F1 /* Dwifft-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D950D20D5F7E11565363B31C170387 /* Dwifft-dummy.m */; };
-		2F6943543FBFE0261B6EA84FA8F68BF3 /* CSVWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB396B18F6132D4D3D7C28DBFB631E /* CSVWriter.swift */; };
-		35872AF610AAF773021BE2290728B317 /* Dwifft+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77A41FADEBB5A46B88F05180CA5876A /* Dwifft+AppKit.swift */; };
-		3C7A70D3428ACC40D6B098EA11958C20 /* CSVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A925A1AE9F333725EF8A51C69C4094 /* CSVError.swift */; };
-		42AECD334B9E812CFF7997996B302097 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		4EB3C7E861E1843C259CB3E2E855D384 /* Dwifft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B62336EF96EA8CC9DB75B33926BE739 /* Dwifft.swift */; };
-		529CAB3169FD4B7580C36502697F4BA2 /* Dwifft-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B219C3EDAC79C9B2954BC47791C7FB0E /* Dwifft-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C2077235AF773ED7243781A3D3F7AD3 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4258131C3E30A03D3C9E34A50CA97CF3 /* CSV.swift */; };
-		5E5DFFD914B54ADB888741D9D3AAD2FF /* Pods-Hermes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3294B691E1435D5EAD3424874FDEA13A /* Pods-Hermes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6FA90548BDAD962E51409D706FEB46C0 /* Pods-Hermes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D693FBDB26847D18DC428A7B5901FE /* Pods-Hermes-dummy.m */; };
-		962EE8BA9D67D1D4DD71C2D311CC19DD /* UnicodeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CED6D98375DD3AB7EF634037360AB5 /* UnicodeIterator.swift */; };
-		B021C3B950A41D10C91FD0FE0161CD98 /* SectionedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D26DD52646AF412A37880A477D263 /* SectionedValues.swift */; };
-		B38775B10F00A04518A4E9CD8F1ED16C /* AbstractDiffCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B111013F41E0C601D107F420AFD43B6 /* AbstractDiffCalculator.swift */; };
-		CA3E2B9DEA1BDD4B7CBA071D9AB69791 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		D26BE5587CDBBAA61B9F4B95789AFED7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		D7E60C7B750C385B68A987A075D3C4EE /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DEEF2749182EA8E0148B0DC0BC8BF4 /* CSVReader.swift */; };
-		DEE0F9F10ADFEE46888DB60DA71AF237 /* Endian.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F6BACC4D00BC7059FD5A53C79FD038 /* Endian.swift */; };
-		E92236D45CF1F30D03BCF0E9AD880164 /* CSV.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC23B71C18E0406700CD8956438F14C /* CSV.swift-dummy.m */; };
-		F38A004C2FA214C953353978C51174AA /* BinaryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8B7469829279D3305E8FAA419BABBE /* BinaryReader.swift */; };
+		08FF0B35742653037F3890BAA4706E6C /* Dwifft+AppKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77A41FADEBB5A46B88F05180CA5876A /* Dwifft+AppKit.swift */; };
+		1025D91CC6049EB18FE2915F5FEE009E /* CSVWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB396B18F6132D4D3D7C28DBFB631E /* CSVWriter.swift */; };
+		22A575FA084066267F4FF4A0AD8463BA /* Pods-Hermes-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D693FBDB26847D18DC428A7B5901FE /* Pods-Hermes-dummy.m */; };
+		24A266A2D9E5701E218941457B1C1418 /* CSV.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC23B71C18E0406700CD8956438F14C /* CSV.swift-dummy.m */; };
+		3934A3CC3EE692BF5D50920D062843DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		4243E7E231C93D5A8BDF4CB5A298D359 /* Dwifft+UIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B48B9069C412FF7835BEB8527C6D0F7 /* Dwifft+UIKit.swift */; };
+		45DFFD5B2383E31FFDA0354E33506ADD /* CSV.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC631DEB24EB28171427DF9523C6AA3C /* CSV.swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		558FFCC81CF74B14B929DAB3884475B0 /* Endian.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F6BACC4D00BC7059FD5A53C79FD038 /* Endian.swift */; };
+		63A93A35EF29277C39BE82BE2EEDBB19 /* SectionedValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567D26DD52646AF412A37880A477D263 /* SectionedValues.swift */; };
+		7648D80C1099FD7FC76AC7A525E04054 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4258131C3E30A03D3C9E34A50CA97CF3 /* CSV.swift */; };
+		7A3B653232F975028D05B03DE12658EB /* BinaryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8B7469829279D3305E8FAA419BABBE /* BinaryReader.swift */; };
+		7AC456CF2B05123AC0AAC2BF8CCF709C /* Dwifft-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B219C3EDAC79C9B2954BC47791C7FB0E /* Dwifft-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8288999DCBDE2CF331D171D5E3461847 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		87DF9A28F4013741FCC9B1E8A924CD8C /* UnicodeIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8CED6D98375DD3AB7EF634037360AB5 /* UnicodeIterator.swift */; };
+		B63D2BE32126E741C08E1CEE934F6486 /* CSVReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DEEF2749182EA8E0148B0DC0BC8BF4 /* CSVReader.swift */; };
+		C3FE5ACC151CADF4AA77ACB22D675840 /* Pods-Hermes-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3294B691E1435D5EAD3424874FDEA13A /* Pods-Hermes-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9FF12B953DE312DEE3961F77F8D7CEB /* Dwifft-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D950D20D5F7E11565363B31C170387 /* Dwifft-dummy.m */; };
+		D71C60070F6E9FFFCB215B7862DD2739 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		DE699C3D277B5DF3BC131BA22698D95E /* AbstractDiffCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B111013F41E0C601D107F420AFD43B6 /* AbstractDiffCalculator.swift */; };
+		E67C7733E27D0D4A66DF7941F4300B1C /* CSVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A925A1AE9F333725EF8A51C69C4094 /* CSVError.swift */; };
+		F6C05BB7A30CBA903E38E7EDA9E5F8E4 /* Dwifft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B62336EF96EA8CC9DB75B33926BE739 /* Dwifft.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AEF1E9C143D066312ADE2E22C7298C66 /* PBXContainerItemProxy */ = {
+		917E5581B30EAC69D47FD7840D670422 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 701D4F02FAA85F5DE4F688FC7C082624;
-			remoteInfo = CSV.swift;
-		};
-		F6E6AB6286645E6C6B8E1D5EC2FBB987 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B881263F5FBF1212B32FA2AABEFFB1CD;
+			remoteGlobalIDString = 48347D9233BD509C40132D5390F24B06;
 			remoteInfo = Dwifft;
+		};
+		F25B4AF5B3B271F42CEF7C8FC93EED3B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91B96E9BA46525BB774B90C16F7EDBE5;
+			remoteInfo = CSV.swift;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -62,7 +62,6 @@
 		48431F2C14A227FFFBD7189A051A887A /* Pods_Hermes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hermes.framework; path = "Pods-Hermes.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5466665B4C6F3DC77F02420DED10492E /* Pods-Hermes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hermes.release.xcconfig"; sourceTree = "<group>"; };
 		567D26DD52646AF412A37880A477D263 /* SectionedValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionedValues.swift; path = Dwifft/SectionedValues.swift; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6135F1A023574450CB7C51C113E9108E /* Dwifft-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Dwifft-prefix.pch"; sourceTree = "<group>"; };
 		79BB6D7AF8E69C8EEC49C03E5A9933AD /* Dwifft.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Dwifft.xcconfig; sourceTree = "<group>"; };
 		7D8B7469829279D3305E8FAA419BABBE /* BinaryReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BinaryReader.swift; path = Sources/CSV/BinaryReader.swift; sourceTree = "<group>"; };
@@ -83,6 +82,7 @@
 		C77A41FADEBB5A46B88F05180CA5876A /* Dwifft+AppKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dwifft+AppKit.swift"; path = "Dwifft/Dwifft+AppKit.swift"; sourceTree = "<group>"; };
 		C8CED6D98375DD3AB7EF634037360AB5 /* UnicodeIterator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnicodeIterator.swift; path = Sources/CSV/UnicodeIterator.swift; sourceTree = "<group>"; };
 		D38B41D863B02920C8ABC5B853C8E2DD /* CSV.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CSV.swift.xcconfig; sourceTree = "<group>"; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D7F6BACC4D00BC7059FD5A53C79FD038 /* Endian.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Endian.swift; path = Sources/CSV/Endian.swift; sourceTree = "<group>"; };
 		D8AB396B18F6132D4D3D7C28DBFB631E /* CSVWriter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSVWriter.swift; path = Sources/CSV/CSVWriter.swift; sourceTree = "<group>"; };
 		E64A585DD5C2C6BD8D75C08CF3D61A6A /* CSV.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CSV.swift.modulemap; sourceTree = "<group>"; };
@@ -90,27 +90,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		654EC330BDDD03B3071413BF53C90CDA /* Frameworks */ = {
+		920EFDCB1DA1584CEAF9EB6BC9C59865 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D26BE5587CDBBAA61B9F4B95789AFED7 /* Foundation.framework in Frameworks */,
+				8288999DCBDE2CF331D171D5E3461847 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8AE8A4F64E2B487D0B612DAD04DC870 /* Frameworks */ = {
+		9F907432597A2F419E64D39C5DA2E9BE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42AECD334B9E812CFF7997996B302097 /* Foundation.framework in Frameworks */,
+				D71C60070F6E9FFFCB215B7862DD2739 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EA8100DE2067E1B1287C66F1119EE36E /* Frameworks */ = {
+		E3A3EB4FF3A9A3FF46E64B0C80FFF890 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA3E2B9DEA1BDD4B7CBA071D9AB69791 /* Foundation.framework in Frameworks */,
+				3934A3CC3EE692BF5D50920D062843DA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +144,14 @@
 			path = "Target Support Files/Pods-Hermes";
 			sourceTree = "<group>";
 		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		5562FF6E37D126C1D295423131A9A8AA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,14 +164,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/CSV.swift";
-			sourceTree = "<group>";
-		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		759A226FB1C41E0DE0761563E94D325C /* Dwifft */ = {
@@ -202,7 +202,7 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				44D5347904CF754D6785B84253F2574A /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -250,59 +250,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3F9A2CFC356754414C2D18A8F07F3320 /* Headers */ = {
+		6C9093C1997E02864BA403959A46BEAC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EF425D49A4B33E2F680F5E3613B5B75 /* CSV.swift-umbrella.h in Headers */,
+				45DFFD5B2383E31FFDA0354E33506ADD /* CSV.swift-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6BA4697B9E0790E893B4E204069FF773 /* Headers */ = {
+		9CDCBC9FC2973130C09AB01F02EFD9FE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				529CAB3169FD4B7580C36502697F4BA2 /* Dwifft-umbrella.h in Headers */,
+				7AC456CF2B05123AC0AAC2BF8CCF709C /* Dwifft-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83E068D3D616838B9E3FBD3BDC3C716F /* Headers */ = {
+		E00392D1836E6C5E65286BCEE4ABE3EF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E5DFFD914B54ADB888741D9D3AAD2FF /* Pods-Hermes-umbrella.h in Headers */,
+				C3FE5ACC151CADF4AA77ACB22D675840 /* Pods-Hermes-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		649863B3AE39D20D46C33F465C8C9059 /* Pods-Hermes */ = {
+		48347D9233BD509C40132D5390F24B06 /* Dwifft */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ACA94FA9750F014303644F95CCA85881 /* Build configuration list for PBXNativeTarget "Pods-Hermes" */;
+			buildConfigurationList = 7FCC7DECC31AF32590A337127F42A5E5 /* Build configuration list for PBXNativeTarget "Dwifft" */;
 			buildPhases = (
-				CF8723AD03EDA04240B10BD9582C3E41 /* Sources */,
-				C8AE8A4F64E2B487D0B612DAD04DC870 /* Frameworks */,
-				83E068D3D616838B9E3FBD3BDC3C716F /* Headers */,
+				9CDCBC9FC2973130C09AB01F02EFD9FE /* Headers */,
+				A915BA8531A3010B810970DF7421796A /* Sources */,
+				920EFDCB1DA1584CEAF9EB6BC9C59865 /* Frameworks */,
+				FF3F62B3B0CE0783CDBA8F4415625D83 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				289124A0B491DA64CE5B62E40C4CF253 /* PBXTargetDependency */,
-				23C29A18161116EC9668608DC83AB857 /* PBXTargetDependency */,
 			);
-			name = "Pods-Hermes";
-			productName = "Pods-Hermes";
-			productReference = 48431F2C14A227FFFBD7189A051A887A /* Pods_Hermes.framework */;
+			name = Dwifft;
+			productName = Dwifft;
+			productReference = 98BDA86560F51E1EAF74D348A2BEEEED /* Dwifft.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		701D4F02FAA85F5DE4F688FC7C082624 /* CSV.swift */ = {
+		91B96E9BA46525BB774B90C16F7EDBE5 /* CSV.swift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 377FE12DC67FA05D7477B8FC587BCBC0 /* Build configuration list for PBXNativeTarget "CSV.swift" */;
+			buildConfigurationList = 28C2A0D6F76C465A1B6E3F11C0E016E2 /* Build configuration list for PBXNativeTarget "CSV.swift" */;
 			buildPhases = (
-				B9174E2573303B665560255A43590020 /* Sources */,
-				654EC330BDDD03B3071413BF53C90CDA /* Frameworks */,
-				3F9A2CFC356754414C2D18A8F07F3320 /* Headers */,
+				6C9093C1997E02864BA403959A46BEAC /* Headers */,
+				94E86CB6F04E7565A424AA45AA104057 /* Sources */,
+				9F907432597A2F419E64D39C5DA2E9BE /* Frameworks */,
+				3E95072CAEA86FD054DAEBEFA9347894 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -313,21 +313,24 @@
 			productReference = A789D95CDF290431303C49C0EED0BA47 /* CSV.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B881263F5FBF1212B32FA2AABEFFB1CD /* Dwifft */ = {
+		932EB3FF1EDF5C20B08B6096403CF828 /* Pods-Hermes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04E690776F854B78BAAB4F45DBA72674 /* Build configuration list for PBXNativeTarget "Dwifft" */;
+			buildConfigurationList = 76CA11B06C52E02B861BFAEADA812024 /* Build configuration list for PBXNativeTarget "Pods-Hermes" */;
 			buildPhases = (
-				83A5511E4268E6FD6601C87C640E68D7 /* Sources */,
-				EA8100DE2067E1B1287C66F1119EE36E /* Frameworks */,
-				6BA4697B9E0790E893B4E204069FF773 /* Headers */,
+				E00392D1836E6C5E65286BCEE4ABE3EF /* Headers */,
+				6489A7F475193BE7D4B9CB51174B7CE3 /* Sources */,
+				E3A3EB4FF3A9A3FF46E64B0C80FFF890 /* Frameworks */,
+				63886E8336EA7B0970301557359FDD9E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2D259C353872F5D2D6AAB27B693D52A9 /* PBXTargetDependency */,
+				6A27005A96EA05B57E06326E11CC1FA9 /* PBXTargetDependency */,
 			);
-			name = Dwifft;
-			productName = Dwifft;
-			productReference = 98BDA86560F51E1EAF74D348A2BEEEED /* Dwifft.framework */;
+			name = "Pods-Hermes";
+			productName = "Pods-Hermes";
+			productReference = 48431F2C14A227FFFBD7189A051A887A /* Pods_Hermes.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -351,69 +354,199 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				701D4F02FAA85F5DE4F688FC7C082624 /* CSV.swift */,
-				B881263F5FBF1212B32FA2AABEFFB1CD /* Dwifft */,
-				649863B3AE39D20D46C33F465C8C9059 /* Pods-Hermes */,
+				91B96E9BA46525BB774B90C16F7EDBE5 /* CSV.swift */,
+				48347D9233BD509C40132D5390F24B06 /* Dwifft */,
+				932EB3FF1EDF5C20B08B6096403CF828 /* Pods-Hermes */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		3E95072CAEA86FD054DAEBEFA9347894 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63886E8336EA7B0970301557359FDD9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF3F62B3B0CE0783CDBA8F4415625D83 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		83A5511E4268E6FD6601C87C640E68D7 /* Sources */ = {
+		6489A7F475193BE7D4B9CB51174B7CE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B38775B10F00A04518A4E9CD8F1ED16C /* AbstractDiffCalculator.swift in Sources */,
-				35872AF610AAF773021BE2290728B317 /* Dwifft+AppKit.swift in Sources */,
-				1D865635B49CD023BA6445CBB603D777 /* Dwifft+UIKit.swift in Sources */,
-				28434066CFF5F0C3BDC870444177F0F1 /* Dwifft-dummy.m in Sources */,
-				4EB3C7E861E1843C259CB3E2E855D384 /* Dwifft.swift in Sources */,
-				B021C3B950A41D10C91FD0FE0161CD98 /* SectionedValues.swift in Sources */,
+				22A575FA084066267F4FF4A0AD8463BA /* Pods-Hermes-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9174E2573303B665560255A43590020 /* Sources */ = {
+		94E86CB6F04E7565A424AA45AA104057 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F38A004C2FA214C953353978C51174AA /* BinaryReader.swift in Sources */,
-				5C2077235AF773ED7243781A3D3F7AD3 /* CSV.swift in Sources */,
-				E92236D45CF1F30D03BCF0E9AD880164 /* CSV.swift-dummy.m in Sources */,
-				3C7A70D3428ACC40D6B098EA11958C20 /* CSVError.swift in Sources */,
-				D7E60C7B750C385B68A987A075D3C4EE /* CSVReader.swift in Sources */,
-				2F6943543FBFE0261B6EA84FA8F68BF3 /* CSVWriter.swift in Sources */,
-				DEE0F9F10ADFEE46888DB60DA71AF237 /* Endian.swift in Sources */,
-				962EE8BA9D67D1D4DD71C2D311CC19DD /* UnicodeIterator.swift in Sources */,
+				7A3B653232F975028D05B03DE12658EB /* BinaryReader.swift in Sources */,
+				7648D80C1099FD7FC76AC7A525E04054 /* CSV.swift in Sources */,
+				24A266A2D9E5701E218941457B1C1418 /* CSV.swift-dummy.m in Sources */,
+				E67C7733E27D0D4A66DF7941F4300B1C /* CSVError.swift in Sources */,
+				B63D2BE32126E741C08E1CEE934F6486 /* CSVReader.swift in Sources */,
+				1025D91CC6049EB18FE2915F5FEE009E /* CSVWriter.swift in Sources */,
+				558FFCC81CF74B14B929DAB3884475B0 /* Endian.swift in Sources */,
+				87DF9A28F4013741FCC9B1E8A924CD8C /* UnicodeIterator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF8723AD03EDA04240B10BD9582C3E41 /* Sources */ = {
+		A915BA8531A3010B810970DF7421796A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FA90548BDAD962E51409D706FEB46C0 /* Pods-Hermes-dummy.m in Sources */,
+				DE699C3D277B5DF3BC131BA22698D95E /* AbstractDiffCalculator.swift in Sources */,
+				08FF0B35742653037F3890BAA4706E6C /* Dwifft+AppKit.swift in Sources */,
+				4243E7E231C93D5A8BDF4CB5A298D359 /* Dwifft+UIKit.swift in Sources */,
+				C9FF12B953DE312DEE3961F77F8D7CEB /* Dwifft-dummy.m in Sources */,
+				F6C05BB7A30CBA903E38E7EDA9E5F8E4 /* Dwifft.swift in Sources */,
+				63A93A35EF29277C39BE82BE2EEDBB19 /* SectionedValues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		23C29A18161116EC9668608DC83AB857 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Dwifft;
-			target = B881263F5FBF1212B32FA2AABEFFB1CD /* Dwifft */;
-			targetProxy = F6E6AB6286645E6C6B8E1D5EC2FBB987 /* PBXContainerItemProxy */;
-		};
-		289124A0B491DA64CE5B62E40C4CF253 /* PBXTargetDependency */ = {
+		2D259C353872F5D2D6AAB27B693D52A9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CSV.swift;
-			target = 701D4F02FAA85F5DE4F688FC7C082624 /* CSV.swift */;
-			targetProxy = AEF1E9C143D066312ADE2E22C7298C66 /* PBXContainerItemProxy */;
+			target = 91B96E9BA46525BB774B90C16F7EDBE5 /* CSV.swift */;
+			targetProxy = F25B4AF5B3B271F42CEF7C8FC93EED3B /* PBXContainerItemProxy */;
+		};
+		6A27005A96EA05B57E06326E11CC1FA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Dwifft;
+			target = 48347D9233BD509C40132D5390F24B06 /* Dwifft */;
+			targetProxy = 917E5581B30EAC69D47FD7840D670422 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0E12B7268EF0862DFEEB8B6B0BD7C9F4 /* Debug */ = {
+		2F86C200C2448FC96AC894B0C8FC6BE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79BB6D7AF8E69C8EEC49C03E5A9933AD /* Dwifft.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Dwifft/Dwifft-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Dwifft/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Dwifft/Dwifft.modulemap";
+				PRODUCT_MODULE_NAME = Dwifft;
+				PRODUCT_NAME = Dwifft;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		35D48489317A01FB6F825CA409996D7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79BB6D7AF8E69C8EEC49C03E5A9933AD /* Dwifft.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Dwifft/Dwifft-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Dwifft/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Dwifft/Dwifft.modulemap";
+				PRODUCT_MODULE_NAME = Dwifft;
+				PRODUCT_NAME = Dwifft;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F010B7BEE24EA1A3325ED2D5B2B25C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D38B41D863B02920C8ABC5B853C8E2DD /* CSV.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CSV.swift/CSV.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSV.swift/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CSV.swift/CSV.swift.modulemap";
+				PRODUCT_MODULE_NAME = CSV;
+				PRODUCT_NAME = CSV;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		98E98810EEEB96C99CB95CB91F4ADE0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -467,58 +600,21 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		13549B722D533A67981473C5554A2C86 /* Release */ = {
+		9BA4CFB8C6AD84077AC8901345A1C938 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5466665B4C6F3DC77F02420DED10492E /* Pods-Hermes.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Hermes/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hermes/Pods-Hermes.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		ABF2AB4ABB5AF9300B1B395EA7FFC58B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79BB6D7AF8E69C8EEC49C03E5A9933AD /* Dwifft.xcconfig */;
+			baseConfigurationReference = D38B41D863B02920C8ABC5B853C8E2DD /* CSV.swift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -529,8 +625,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Dwifft/Dwifft-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Dwifft/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CSV.swift/CSV.swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CSV.swift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -538,49 +634,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/Dwifft/Dwifft.modulemap";
-				PRODUCT_MODULE_NAME = Dwifft;
-				PRODUCT_NAME = Dwifft;
+				MODULEMAP_FILE = "Target Support Files/CSV.swift/CSV.swift.modulemap";
+				PRODUCT_MODULE_NAME = CSV;
+				PRODUCT_NAME = CSV;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		C309A50E18BAF1AEE345702ED7FCC9B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79BB6D7AF8E69C8EEC49C03E5A9933AD /* Dwifft.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Dwifft/Dwifft-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Dwifft/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Dwifft/Dwifft.modulemap";
-				PRODUCT_MODULE_NAME = Dwifft;
-				PRODUCT_NAME = Dwifft;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -589,47 +648,7 @@
 			};
 			name = Release;
 		};
-		C4F5F93D3ABA8D08CBD4A29FD7CED25F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2905045058FD08733584ACE64C937598 /* Pods-Hermes.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Hermes/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hermes/Pods-Hermes.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CD8324D57CD462761E218EEA4EA91EC7 /* Release */ = {
+		B97A7F6ACE1216BB5A2307CA83FC93C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -681,16 +700,22 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		D5C3EA927B700EA683567959DA07D922 /* Debug */ = {
+		C6E64CA5A2152F538D2307636DA75BDF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D38B41D863B02920C8ABC5B853C8E2DD /* CSV.swift.xcconfig */;
+			baseConfigurationReference = 5466665B4C6F3DC77F02420DED10492E /* Pods-Hermes.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -700,59 +725,23 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CSV.swift/CSV.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CSV.swift/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hermes/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/CSV.swift/CSV.swift.modulemap";
-				PRODUCT_MODULE_NAME = CSV;
-				PRODUCT_NAME = CSV;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hermes/Pods-Hermes.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F9B3A4179CE5880506281745EA3103B3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D38B41D863B02920C8ABC5B853C8E2DD /* CSV.swift.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CSV.swift/CSV.swift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CSV.swift/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/CSV.swift/CSV.swift.modulemap";
-				PRODUCT_MODULE_NAME = CSV;
-				PRODUCT_NAME = CSV;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -760,14 +749,52 @@
 			};
 			name = Release;
 		};
+		CE4CC750FBAE81E0D31C2027C848192C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2905045058FD08733584ACE64C937598 /* Pods-Hermes.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hermes/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hermes/Pods-Hermes.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		04E690776F854B78BAAB4F45DBA72674 /* Build configuration list for PBXNativeTarget "Dwifft" */ = {
+		28C2A0D6F76C465A1B6E3F11C0E016E2 /* Build configuration list for PBXNativeTarget "CSV.swift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ABF2AB4ABB5AF9300B1B395EA7FFC58B /* Debug */,
-				C309A50E18BAF1AEE345702ED7FCC9B9 /* Release */,
+				8F010B7BEE24EA1A3325ED2D5B2B25C6 /* Debug */,
+				9BA4CFB8C6AD84077AC8901345A1C938 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -775,26 +802,26 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0E12B7268EF0862DFEEB8B6B0BD7C9F4 /* Debug */,
-				CD8324D57CD462761E218EEA4EA91EC7 /* Release */,
+				98E98810EEEB96C99CB95CB91F4ADE0A /* Debug */,
+				B97A7F6ACE1216BB5A2307CA83FC93C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		377FE12DC67FA05D7477B8FC587BCBC0 /* Build configuration list for PBXNativeTarget "CSV.swift" */ = {
+		76CA11B06C52E02B861BFAEADA812024 /* Build configuration list for PBXNativeTarget "Pods-Hermes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5C3EA927B700EA683567959DA07D922 /* Debug */,
-				F9B3A4179CE5880506281745EA3103B3 /* Release */,
+				CE4CC750FBAE81E0D31C2027C848192C /* Debug */,
+				C6E64CA5A2152F538D2307636DA75BDF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ACA94FA9750F014303644F95CCA85881 /* Build configuration list for PBXNativeTarget "Pods-Hermes" */ = {
+		7FCC7DECC31AF32590A337127F42A5E5 /* Build configuration list for PBXNativeTarget "Dwifft" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C4F5F93D3ABA8D08CBD4A29FD7CED25F /* Debug */,
-				13549B722D533A67981473C5554A2C86 /* Release */,
+				2F86C200C2448FC96AC894B0C8FC6BE3 /* Debug */,
+				35D48489317A01FB6F825CA409996D7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
