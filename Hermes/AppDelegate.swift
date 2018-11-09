@@ -76,12 +76,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         saveContext()
     }
     
-    func handleEvent(for region: CLRegion!, enter: Bool) {
+    func handleEvent(for region: CLRegion!) {
         if UIApplication.shared.applicationState == .active {
             //show alert
             guard let message = note(fromRegion: region.identifier) else { return }
             window?.rootViewController?.showAlert(withTitle: nil, message: message)
-//            print("\(note(fromRegion: region.identifier) ?? ""), Enter: \(enter)")
         } else {
             //present local notification
             let notification = UNMutableNotificationContent()
@@ -90,8 +89,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let request = UNNotificationRequest.init(identifier: "Trigger", content: notification, trigger: nil)
             let center = UNUserNotificationCenter.current()
             center.add(request)
-//            print("\(note(fromRegion: region.identifier) ?? ""), Enter: \(enter)")
         }
+        //start session
+        sessionManager.startMonitoringSignificantLocationChanges()
+        session = HMSSession.insertNewObject(into: viewManagedObjectContext)
+        session?.name = "\(Date().iso8601) Geofence triggered"
+        session?.createdAt = Date()
     }
     
     func note(fromRegion identifier: String) -> String? {
@@ -175,13 +178,13 @@ extension AppDelegate: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         if region is CLCircularRegion {
-            handleEvent(for: region, enter: true)
+            handleEvent(for: region)
         }
     }
     
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         if region is CLCircularRegion {
-            handleEvent(for: region, enter: false)
+            handleEvent(for: region)
         }
     }
     

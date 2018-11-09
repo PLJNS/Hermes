@@ -26,6 +26,8 @@ class SessionManager: NSObject {
     private let motionActivityManager = CMMotionActivityManager()
     private let locationManager = CLLocationManager()
     private var accelerometerUpdateInterval: Double = 1/60
+    private var stationaryTimer = Timer()
+    private var secondCounter = 0
     
     func stopUpdates() {
         motionManager.stopAccelerometerUpdates()
@@ -62,9 +64,31 @@ private extension SessionManager {
             guard let strongSelf = self else { return }
             if let activity = activity {
                 strongSelf.delegate?.didUpdateActivity(activity)
+                if let strongSelf = self {
+                    if activity.automotive || activity.running || activity.cycling {
+                        //cancel timer
+                        strongSelf.secondCounter = 0
+                        strongSelf.stationaryTimer.invalidate()
+                        print("MOVING")
+                    } else {
+                        //start timer
+                        strongSelf.stationaryTimer = Timer.scheduledTimer(timeInterval: 1, target: strongSelf, selector: (#selector(strongSelf.updateTimer)), userInfo: nil, repeats: true)
+                        print("NOT MOVING")
+                    }
+                }
             }
         }
     }
+    
+    @objc func updateTimer() {
+        secondCounter += 1
+        if secondCounter >= 300 {
+            secondCounter = 0
+            stationaryTimer.invalidate()
+            stopUpdates()
+        }
+    }
+    
 }
 
 extension SessionManager: CLLocationManagerDelegate {
