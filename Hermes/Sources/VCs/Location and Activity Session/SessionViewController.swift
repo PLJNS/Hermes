@@ -145,6 +145,9 @@ extension SessionViewController: SessionManagerDelegate {
         session?.addToEntries(hmsLocation)
     }
     
+    func didEnterOrExit(_ region: CLRegion) {
+    }
+    
 }
 
 extension SessionViewController: UITableViewDataSource {

@@ -21,13 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var sessionManager = SessionManager()
     var bluetoothManager: BluetoothManager?
     var session: HMSSession?
-    
-    let locationManager = CLLocationManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        locationManager.delegate = self
-        locationManager.requestAlwaysAuthorization()
-        
         if let _ = launchOptions?[.location] {
             sessionManager.startMonitoringSignificantLocationChanges()
             session = HMSSession.insertNewObject(into: viewManagedObjectContext)
@@ -74,27 +69,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         saveContext()
-    }
-    
-    func handleEvent(for region: CLRegion!) {
-        if UIApplication.shared.applicationState == .active {
-            //show alert
-            guard let message = note(fromRegion: region.identifier) else { return }
-            window?.rootViewController?.showAlert(withTitle: nil, message: message)
-        } else {
-            //present local notification
-            let notification = UNMutableNotificationContent()
-            notification.body = note(fromRegion: region.identifier) ?? "Geofence triggered!"
-            notification.sound = UNNotificationSound.default
-            let request = UNNotificationRequest.init(identifier: "Trigger", content: notification, trigger: nil)
-            let center = UNUserNotificationCenter.current()
-            center.add(request)
-        }
-        //start session
-        sessionManager.startMonitoringSignificantLocationChanges()
-        session = HMSSession.insertNewObject(into: viewManagedObjectContext)
-        session?.name = "\(Date().iso8601) Geofence triggered"
-        session?.createdAt = Date()
     }
     
     func note(fromRegion identifier: String) -> String? {
@@ -172,20 +146,28 @@ extension AppDelegate: SessionManagerDelegate {
         }
     }
     
-}
-
-extension AppDelegate: CLLocationManagerDelegate {
-    
-    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        if region is CLCircularRegion {
-            handleEvent(for: region)
+    func didEnterOrExit(_ region: CLRegion) {
+        if UIApplication.shared.applicationState == .active {
+            //show alert
+            guard let message = note(fromRegion: region.identifier) else { return }
+            window?.rootViewController?.showAlert(withTitle: nil, message: message)
+        } else {
+            //present local notification
+            let notification = UNMutableNotificationContent()
+            notification.body = note(fromRegion: region.identifier) ?? "Geofence triggered!"
+            notification.sound = UNNotificationSound.default
+            let request = UNNotificationRequest.init(identifier: "Trigger", content: notification, trigger: nil)
+            let center = UNUserNotificationCenter.current()
+            center.add(request)
         }
+        
+        //start session
+//        sessionManager.startMonitoringSignificantLocationChanges()
+        //TESTING ONLY
+        sessionManager.startUpdatingLocation()
+        
+        session = HMSSession.insertNewObject(into: viewManagedObjectContext)
+        session?.name = "\(Date().iso8601) Geofence triggered"
+        session?.createdAt = Date()
     }
-    
-    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
-        if region is CLCircularRegion {
-            handleEvent(for: region)
-        }
-    }
-    
 }

@@ -1,9 +1,18 @@
 <?xml version="1.0"?>
 <gpx version="1.1" creator="Xcode">
-  <wpt lat="37.422" lon="-122.084058">
-    <name>Google</name>
+<!--  <wpt lat="40.700391" lon="-73.987355">-->
+<!--    <name>Prolific Dumbo</name>-->
+<!--  </wpt>-->
+  <wpt lat="40.700001" lon="-73.987863">
+      <name>ProlificSim</name>
   </wpt>
-  <wpt lat="37.331695" lon="-122.0322801">
-    <name>Apple</name>
-  </wpt>
+<!--  <wpt lat="37.331695" lon="-122.0322801">-->
+<!--    <name>Apple</name>-->
+<!--  </wpt>-->
+<!--<wpt lat="40.701473" lon="-73.986669">-->
+<!--    <name>Subway</name>-->
+<!--</wpt>-->
+<wpt lat="40.701985" lon="-73.986104">
+    <name>SubwaySim</name>
+</wpt>
 </gpx>

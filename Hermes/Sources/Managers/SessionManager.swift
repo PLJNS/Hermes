@@ -16,6 +16,7 @@ protocol SessionManagerDelegate: class {
     
     func didUpdateLocation(_ location: CLLocation, withAccelerometerData data: CMAccelerometerData?)
     
+    func didEnterOrExit(_ region: CLRegion)
 }
 
 class SessionManager: NSObject {
@@ -64,17 +65,15 @@ private extension SessionManager {
             guard let strongSelf = self else { return }
             if let activity = activity {
                 strongSelf.delegate?.didUpdateActivity(activity)
-                if let strongSelf = self {
-                    if activity.automotive || activity.running || activity.cycling {
-                        //cancel timer
-                        strongSelf.secondCounter = 0
-                        strongSelf.stationaryTimer.invalidate()
-                        print("MOVING")
-                    } else {
-                        //start timer
-                        strongSelf.stationaryTimer = Timer.scheduledTimer(timeInterval: 1, target: strongSelf, selector: (#selector(strongSelf.updateTimer)), userInfo: nil, repeats: true)
-                        print("NOT MOVING")
-                    }
+                if activity.automotive || activity.running || activity.cycling {
+                    //cancel timer
+                    //strongSelf.secondCounter = 0
+                    //strongSelf.stationaryTimer.invalidate()
+                    print("MOVING")
+                } else {
+                    //start timer
+                    //strongSelf.stationaryTimer = Timer.scheduledTimer(timeInterval: 1, target: strongSelf, selector: (#selector(strongSelf.updateTimer)), userInfo: nil, repeats: true)
+                    print("NOT MOVING")
                 }
             }
         }
@@ -95,6 +94,18 @@ extension SessionManager: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         delegate?.didUpdateLocation(locations[0], withAccelerometerData: motionManager.accelerometerData)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+        if region is CLCircularRegion {
+            delegate?.didEnterOrExit(region)
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+        if region is CLCircularRegion {
+            delegate?.didEnterOrExit(region)
+        }
     }
     
 }
